@@ -1,9 +1,10 @@
-# 🚀 Html webpack template
+# 🚀 Link on site https://shaposhnikov.in/  🚀
 
 ## ⚙️ Features
 - Webpack 5
 - Scss
-- PostCSS
+- JavaScript
+- JQuery
 - Autoprefixer
 - Image Minify
 - Dev Server
