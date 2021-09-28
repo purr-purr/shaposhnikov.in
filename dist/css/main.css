@@ -412,6 +412,9 @@ button {
 }
 
 @media (max-width: 650px) {
+  .scroll-down {
+    display: none;
+  }
   .dark-theme-btn {
     width: 50px;
     height: 50px;
@@ -1058,7 +1061,6 @@ button {
 @media (max-width: 405px) {
   .about-me__inner {
     max-width: 213px;
-    top: calc((100% - 168px) / 2);
   }
 }
 
