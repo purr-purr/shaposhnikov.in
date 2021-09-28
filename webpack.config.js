@@ -102,10 +102,6 @@ module.exports = {
 					},
 				},
 				{
-					from: path.resolve(__dirname, 'src/template/'),
-					to: path.resolve(__dirname, 'dist/template/'),
-				},
-				{
 					from: path.resolve(__dirname, 'src/css/'),
 					to: path.resolve(__dirname, 'dist/css/'),
 				},

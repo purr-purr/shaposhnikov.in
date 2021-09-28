@@ -1122,6 +1122,9 @@ button {
   margin-bottom: 40px;
   margin-right: 40px;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .skills__list-item::before {
@@ -1420,6 +1423,7 @@ button {
   }
   .skills__inner {
     position: relative;
+    top: unset;
   }
   .project-desc {
     height: 500px;
@@ -1548,8 +1552,6 @@ button {
   }
   .skills__list {
     margin-left: 20px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content;
