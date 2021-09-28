@@ -82,6 +82,7 @@ body {
   cursor: none;
   background: #fff url(../img/system/bg__cleen-noise.png);
   background: var(--color-white) url(../img/system/bg__cleen-noise.png);
+  isolation: isolate;
 }
 
 ::-webkit-scrollbar {
