@@ -11,7 +11,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
-
 module.exports = {
 	entry: ['./js/webpack.js', './scss/main.scss'],
 	output: {
@@ -75,13 +74,18 @@ module.exports = {
 			},
 			{
 				test: /\.(png|jpeg|svg|gif|jpg)$/,
-				use: ['file-loader'],
+				use: {
+						loader: 'file-loader',
+						options: {
+								name: '[path][name].[ext]',
+						}
+				},
 			}
 		]
 	},
 	plugins: [
 		new CleanWebpackPlugin({
-			dry: true,
+			cleanOnceBeforeBuildPatterns: [path.join(__dirname, 'dist/**/*')]
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
@@ -107,11 +111,15 @@ module.exports = {
 				},
 				{
 					from: path.resolve(__dirname, 'src/img/'),
-					to: path.resolve(__dirname, 'dist/img/[path][name][ext]'),
+					to: path.resolve(__dirname, 'dist/img/'),
 				},
 				{
 					from: path.resolve(__dirname, 'src/fonts/'),
 					to: path.resolve(__dirname, 'dist/fonts/'),
+				},
+				{
+					from: path.resolve(__dirname, 'src/robots.txt'),
+					to: path.resolve(__dirname, 'dist/robots.txt'),
 				},
 			],
 		}),
@@ -126,27 +134,27 @@ module.exports = {
 		}),
 	],
 	devServer: {
-        historyApiFallback: true,
-        // contentBase: path.resolve(__dirname, '/dist'),
-        open: true,
-		openPage: 'http://localhost:8080',
-        compress: true,
-		// host: '0.0.0.0',
-        // hot: true,
-		// watchContentBase: true,
-		inline: true,
-        port: 8080,
-		overlay: {
-			warnings: true,
-			errors: true,
-		},
-		stats: {
-			colors: true,
-			modules: false,
-			chunks: false,
-			chunkGroups: false,
-			chunkModules: false,
-			env: true,
-		},
+			historyApiFallback: true,
+			// contentBase: path.resolve(__dirname, '/dist'),
+			open: true,
+			openPage: 'http://localhost:8080',
+			compress: true,
+			// host: '0.0.0.0',
+			// hot: true,
+			// watchContentBase: true,
+			inline: true,
+			port: 8080,
+			overlay: {
+				warnings: true,
+				errors: true,
+			},
+			stats: {
+				colors: true,
+				modules: false,
+				chunks: false,
+				chunkGroups: false,
+				chunkModules: false,
+				env: true,
+			},
     },
 }
