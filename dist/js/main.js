@@ -1,19 +1,34 @@
+// When DOM loaded
+$(function() {
+	preloader();
+	scrollAction();
+	custonCursor();
+});
+
 // Preloader
-window.onload = function () {
+function preloader() {
 	document.body.classList.add('loaded-active');
 	window.setTimeout(() => {
 		document.body.classList.add('loaded');
 		document.body.classList.remove('loaded-active');
 	}, 500);
-};
+}
 
 // =====================================================
 
-// <1024px - начало адаптивной версии
+// <1024px - start adaptivity
 const adaptiveBreakpoint = $(window).width() > 1024;
 
 // Scroll Action
 $(window).scroll(function() {
+	scrollAction();
+});
+
+$(window).resize(function() {
+	scrollAction();
+});
+
+function scrollAction() {
 	const height = $(window).scrollTop();
 	const scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
@@ -75,13 +90,13 @@ $(window).scroll(function() {
 			'transform': 'rotate(0deg)',
 		})
 	}
-});
+};
 
 // =====================================================
-
 // Custom cursor
-$(document).ready(function() {
-  const cursor = $(".cursor");
+
+function custonCursor() {
+	const cursor = $(".cursor");
   const cursorAura = $(".aura");
   const redDot = $(".red-dot");
   const mainHeading = $(".main-heading__inner");
@@ -137,8 +152,7 @@ $(document).ready(function() {
 			});
 		});
 	}
-});
-
+}
 
 // =====================================================
 
@@ -147,13 +161,11 @@ $('.menu__open-btn, .nav').on('click', function(event){
   $('.nav').toggleClass('open');
 	if ($('.nav').hasClass('open')) {
 		$('html').css({'overflow-y': 'hidden'});
-		// $('.header').css({'mix-blend-mode': 'normal'});
 		$('.header').addClass('off-mix-blend-mode');
 		$('.menu__opened').hide();
 		$('.menu__open-btn').addClass('menu__hide-border cursor-close');
 	} else {
 		$('html').css({'overflow-y': 'auto'});
-		// $('.header').css({'mix-blend-mode': 'difference'});
 		$('.header').removeClass('off-mix-blend-mode');
 		$('.menu__opened').show();
 		$('.menu__open-btn').removeClass('menu__hide-border cursor-close');

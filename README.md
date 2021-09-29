@@ -3,14 +3,15 @@
 ## ⚙️ Features
 
 - Webpack 5
-- Scss
+- SCSS
 - JavaScript
 - JQuery
 - Autoprefixer
 - Image Minify
 - Dev Server
 
-## 🏁 Quick start
+
+## 🏁 Quick start project
 
 # Install dependencies:
 
