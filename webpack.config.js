@@ -114,6 +114,10 @@ module.exports = {
 					to: path.resolve(__dirname, 'dist/fonts/'),
 				},
 				{
+					from: path.resolve(__dirname, 'src/assets-file/'),
+					to: path.resolve(__dirname, 'dist/assets-file/'),
+				},
+				{
 					from: path.resolve(__dirname, 'src/robots.txt'),
 					to: path.resolve(__dirname, 'dist/robots.txt'),
 				},
