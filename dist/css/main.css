@@ -1384,6 +1384,10 @@ button {
   text-decoration: underline;
 }
 
+.projects__info .info__git-link.not-link:hover {
+  text-decoration: none;
+}
+
 .projects__info--type {
   margin-right: 30px;
   min-width: 150px;
@@ -1519,7 +1523,7 @@ button {
   .contacts__inner {
     top: 150px;
   }
-  .skills {
+  .skills, .experience {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1530,6 +1534,9 @@ button {
   }
   .project-desc {
     height: 500px;
+  }
+  .contacts {
+    margin-bottom: 50px;
   }
 }
 

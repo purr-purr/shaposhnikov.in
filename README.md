@@ -26,9 +26,3 @@ npm run dev
 # Output will be at dist/ folder
 
 npm run build
-
-| npm             | yarn           | actions     |
-| --------------- | -------------- | ----------- |
-| `npm install`   | `yarn install` | install     |
-| `npm run start` | `yarn start`   | development |
-| `npm run build` | `yarn build`   | production  |

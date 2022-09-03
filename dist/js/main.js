@@ -169,7 +169,7 @@ $('.menu__open-btn, .nav').on('click', function(event){
 		$('.header').removeClass('off-mix-blend-mode');
 		$('.menu__opened').show();
 		$('.menu__open-btn').removeClass('menu__hide-border cursor-close');
-		}
+	}
 });
 
 // =====================================================
