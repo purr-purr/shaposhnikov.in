@@ -1,0 +1,7 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+@import 'common.scss';
+// modules
+@import '../../../modules/header/Header.module.scss';
+@import '../../../modules/footer/Footer.module.scss';
+@import '../../../modules/preloader/Preloader.module';

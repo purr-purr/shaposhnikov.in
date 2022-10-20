@@ -1,0 +1,123 @@
+.footer {
+
+  .footer__inner {
+    margin-bottom: 35px;
+    padding-top: 35px;
+    border-top: 1px solid #D3D3D3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: 500;
+    color: $secondary;
+
+    @include media-mobile {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      margin-right: 50px;
+
+      @include media-tablet {
+        margin-right: 0;
+      }
+    }
+
+    .footer__main-info, .footer__contact-info, .footer__sub-info {
+      @include flex-justify-align(space-between, center)
+    }
+
+    .footer__main-info {
+      margin-bottom: 35px;
+
+      @include media-tablet {
+        align-items: normal;
+      }
+
+      @include media-mobile {
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+    }
+
+    .footer__contact-wrapper {
+      display: flex;
+      gap: 135px;
+
+      @include media-tablet {
+        gap: 0;
+      }
+
+      @include media-mobile {
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+    }
+
+    .footer__contact-info {
+      @include media-tablet {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+
+    .footer__contact-item {
+      margin-right: 50px;
+
+      @include media-tablet {
+        margin-bottom: 6px;
+      }
+
+      @include media-mobile {
+        margin-bottom: 10px;
+        font-size: 8px;
+        max-width: 121px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @include media-tablet {
+          margin-bottom: 0;
+        }
+      }
+
+      .footer__contact-link {
+        @include flex-align(center);
+
+        img {
+          margin-right: 5px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    .footer__sub-info {
+
+      @include media-mobile {
+        align-items: flex-start;
+        font-size: 8px;
+      }
+
+      p:first-child {
+        max-width: 337px;
+        width: 100%;
+
+        @include media-tablet {
+          max-width: 160px;
+        }
+      }
+
+      .footer__sub-info--group p {
+        text-align: right;
+        margin-bottom: 10px;
+
+        @include media-mobile {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

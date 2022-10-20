@@ -1,0 +1,56 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  z-index: 999999;
+
+  &__row {
+    position: relative;
+    top: calc((100% - 133px) / 2);
+    left: calc((100% - 133px) / 2);
+    width: 133px;
+    height: 133px;
+
+    z-index: 9999999;
+    background: url('/assets/images/system/any/preloader.svg') no-repeat center center;
+    background-size: 133px;
+    -webkit-animation: spin 15s linear 0s infinite;
+    animation: spin 15s linear 0s infinite;
+  }
+}
+
+.loaded_hiding .preloader {
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}

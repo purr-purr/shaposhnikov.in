@@ -1,0 +1,33 @@
+// Flex
+@mixin flex-align($align-position) {
+  display: flex;
+  align-items: $align-position;
+}
+
+@mixin flex-justify($justify-position) {
+  display: flex;
+  justify-content: $justify-position;
+}
+
+@mixin flex-justify-align($justify-position, $align-position) {
+  display: flex;
+  justify-content: $justify-position;
+  align-items: $align-position;
+}
+
+@mixin transition($delay) {
+  transition: all $delay ease-in;
+}
+
+/* Breakpoint mixins */
+@mixin media-mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
