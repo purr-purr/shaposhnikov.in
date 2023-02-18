@@ -1,0 +1,16 @@
+$laptop-bp: 1024px;
+$mobile-bp: 1024px;
+
+.defaultTheme:root {
+  --red: #FF0F00;
+  --white: #fff;
+  --dark: #222;
+  --grey: #666;
+  --aqua: #05ebfa;
+
+  --gray-bg: #F5F5F5;
+}
+
+.darkTheme {
+  --red: blue;
+}

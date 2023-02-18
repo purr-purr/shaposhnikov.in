@@ -22,6 +22,7 @@
   bottom: 0;
   background-color: var(--color-white);
   z-index: 999999;
+
   &__inner {
     width: 200px;
     height: 200px;
@@ -29,17 +30,20 @@
     top: calc((100% - 200px) / 2);
     left: calc((100% - 200px) / 2);
   }
+
   &__item {
     width: 170px;
     height: 170px;
     margin: auto;
     animation: spin-top 4s infinite linear;
+
     img {
       display: block;
       width: 100%;
       height: 100%;
     }
   }
+
   &__text {
     font-size: 20px;
     text-align: center;
@@ -58,34 +62,47 @@
 
 // SYSTEM STYLE
 *, *:before, *:after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-family: 'Object Sans';
-	overflow-x: hidden;
-	box-sizing: border-box;
-	height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
-	width: 100%;
+  width: 100%;
   position: relative;
   font-family: inherit;
-	font-style: normal;
-	color: var(--color-dark);
+  font-style: normal;
+  color: var(--color-dark);
   cursor: none;
   background: var(--color-white) url('../img/system/bg__cleen-noise.png');
   isolation: isolate;
 }
 
-::-webkit-scrollbar { width: 5px; height: 5px;}
-::-webkit-scrollbar-button { height: 0; width: 100%;}
-::-webkit-scrollbar-thumb {background-color: var(--color-white); border-radius: 50px;}
-::-webkit-scrollbar-track-piece { background-color: var(--color-dark);
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-white);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--color-dark);
 }
 
 ::selection {
@@ -104,22 +121,22 @@ ul {
 }
 
 strong, b {
-	font-weight: 800;
+  font-weight: 800;
 }
 
 a, a:focus, a:hover, a:active a:visited {
-	outline: 0;
-	color: inherit;
-	text-decoration: none;
+  outline: 0;
+  color: inherit;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 {
-	font-weight: 800;
+  font-weight: 800;
   line-height: 1.1;
 }
 
 h1, h2, h3 {
-	font-size: 80px;
+  font-size: 80px;
   letter-spacing: -0.015em;
 }
 
@@ -133,7 +150,7 @@ button {
 }
 
 :active, :focus {
-	outline: none;
+  outline: none;
 }
 
 /* ======================================
@@ -157,6 +174,7 @@ button {
   border-bottom: 1px solid var(--color-grey);
   mix-blend-mode: difference;
   background: var(--color-white) url('../img/system/bg__cleen-noise.png');
+
   &.off-mix-blend-mode {
     mix-blend-mode: normal;
   }
@@ -166,6 +184,7 @@ button {
   text-transform: uppercase;
   font-size: 80px;
   position: relative;
+
   &::before,
   &::after {
     content: attr(data-text);
@@ -175,6 +194,7 @@ button {
     -webkit-text-stroke: 1px var(--color-dark);
     -webkit-text-fill-color: transparent;
   }
+
   &::after {
     top: 100px;
   }
@@ -186,10 +206,12 @@ button {
   }
   .section-heading {
     font-size: 60px;
+
     &::before,
     &::after {
       top: 41px;
     }
+
     &::after {
       top: 81px;
     }
@@ -208,10 +230,12 @@ button {
   }
   .section-heading {
     font-size: 50px;
+
     &::before,
     &::after {
       top: 33px;
     }
+
     &::after {
       top: 65px;
     }
@@ -224,10 +248,12 @@ button {
   }
   .section-heading {
     font-size: 30px;
+
     &::before,
     &::after {
       top: 19px;
     }
+
     &::after {
       top: 36px;
     }
@@ -242,9 +268,11 @@ button {
   z-index: 98;
   width: fit-content;
   height: fit-content;
+
   & svg {
     animation: scrolld-down-levitation 3s infinite ease-in-out;
   }
+
   &__text {
     width: 0;
     text-transform: lowercase;
@@ -256,6 +284,7 @@ button {
     z-index: -1;
     margin-bottom: 40px;
     margin-left: -4px;
+
     &::before {
       content: attr(data-text);
       position: absolute;
@@ -267,15 +296,22 @@ button {
       transition: 1s;
     }
   }
+
   &:hover &__text::before {
     width: 100%;
   }
 }
 
 @keyframes scrolld-down-levitation {
-  from { transform: translate(0,  0); }
-  65%  { transform: translate(0, 10px); }
-  to   { transform: translate(0, 0); }    
+  from {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
 }
 
 // Dark Theme 
@@ -290,13 +326,21 @@ button {
 }
 
 @keyframes spin-top {
-  from { transform:rotate(0deg); }
-  to { transform:rotate(90deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
 }
 
 @keyframes spin-down {
-  from { transform:rotate(0deg); }
-  to { transform:rotate(-90deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -305,6 +349,7 @@ button {
       width: 30px;
       height: 30px;
     }
+
     &__text {
       left: 18px;
       top: 37px;
@@ -332,15 +377,17 @@ button {
   height: 100vh;
   @include flex-c-c;
   flex-direction: column;
+
   &__circle {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
     animation: spin-top 4s infinite linear;
   }
+
   & h1,
   & h3 {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 40px;
   }
@@ -350,7 +397,7 @@ button {
 .cursor, .aura {
   position: fixed;
   border-radius: 100%;
-  transition: .5s cubic-bezier(.75,-1.27,.3,2.33) transform, .2s cubic-bezier(.75,-1.27,.3,2.33) opacity;
+  transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity;
   user-select: none;
   pointer-events: none;
   z-index: 99;
@@ -370,6 +417,7 @@ button {
   transform: translate(-19px, -19px);
   mix-blend-mode: difference;
   transition: all .3s linear;
+
   &.active {
     border: none;
     transform: translate(-19px, -19px) scale(2);
@@ -380,6 +428,7 @@ button {
 // Меню
 .menu {
   height: 100%;
+
   &__open-btn {
     @include flex-c-c;
     height: 100%;
@@ -391,6 +440,7 @@ button {
     position: relative;
     z-index: 99;
     cursor: none;
+
     &::before {
       content: "";
       position: absolute;
@@ -402,19 +452,23 @@ button {
       transition: all 0.5s ease-in-out;
     }
   }
+
   &__opened {
     text-transform: lowercase;
     cursor: pointer;
     transition: color .5s ease-in-out;
   }
+
   &__opened:hover {
     color: var(--main-red);
     transition: color .5s ease-in-out;
   }
+
   &__hide-half-border::before {
     height: 120px;
   }
-  &__hide-border::before  {
+
+  &__hide-border::before {
     height: 0;
   }
 }
@@ -433,19 +487,22 @@ button {
   background-color: var(--main-red);
   transition: all 0.5s ease-in-out;
   animation: fill 1s ease-in-out;
+
   &.open {
     display: flex;
     align-items: center;
     z-index: 98;
     cursor: url('../img/system/close__icon.svg'), auto;
     overflow-y: scroll;
-    animation: fill 1s ease-in-out; 
+    animation: fill 1s ease-in-out;
   }
+
   &__list {
     opacity: 0;
     margin-left: 17%;
     animation: show-nav 1s forwards ease-in-out;
   }
+
   &__item a {
     display: block;
     height: 100%;
@@ -459,14 +516,19 @@ button {
     -webkit-text-fill-color: transparent;
     padding: 25px 0;
   }
+
   &__item a:hover {
     -webkit-text-fill-color: var(--color-dark);
   }
 }
 
 @keyframes show-nav {
-  0%, 99% { opacity: 0; }
-  100% { opacity: 1; }
+  0%, 99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fill {
@@ -486,10 +548,12 @@ button {
       width: 115px;
       font-size: 15px;
     }
+
     &__hide-half-border::before {
       height: 70px;
     }
-    &__hide-border::before  {
+
+    &__hide-border::before {
       height: 0;
     }
   }
@@ -519,6 +583,7 @@ button {
     &__list {
       margin-left: 30px;
     }
+
     &__item a {
       font-size: 40px;
       line-height: 43px;
@@ -532,6 +597,7 @@ button {
     &__list {
       margin-left: 20px;
     }
+
     &__item a {
       font-size: 30px;
       line-height: 31px;
@@ -543,6 +609,7 @@ button {
 .intro {
   height: calc(100vh + 200px);
   width: 100%;
+
   &__inner {
     height: 100%;
   }
@@ -555,6 +622,7 @@ button {
   z-index: -1;
   height: calc(100% - 120px);
   width: 100%;
+
   &__item {
     position: sticky;
     top: 120px;
@@ -564,10 +632,12 @@ button {
     filter: alpha(opacity=100);
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
+
     img {
       width: 100%;
     }
   }
+
   &__hide {
     visibility: hidden;
     opacity: 0;
@@ -583,6 +653,7 @@ button {
   height: fit-content;
   width: 100%;
   display: flex;
+
   &__inner {
     z-index: 5;
     margin-left: 230px;
@@ -591,6 +662,7 @@ button {
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
   }
+
   &__name {
     text-transform: uppercase;
     width: fit-content;
@@ -610,6 +682,7 @@ button {
     height: 100vh;
     max-height: 500px;
     margin-bottom: 0;
+
     &__inner {
       position: relative;
     }
@@ -617,10 +690,12 @@ button {
   .main-heading {
     position: absolute;
     top: calc((95% - 104px) / 2);
+
     &__name {
       font-size: 50px;
       line-height: 52px;
     }
+
     &__inner {
       margin-left: 130px;
     }
@@ -629,6 +704,7 @@ button {
     top: 70px;
     height: calc(100% - 70px);
     max-height: 500px;
+
     &__item {
       position: absolute;
       top: calc(50% - 200px);
@@ -641,9 +717,11 @@ button {
 @media (max-width: 650px) {
   .main-heading {
     top: calc((90% - 84px) / 2);
+
     &__inner {
       margin-left: 30px;
     }
+
     &__name {
       font-size: 30px;
       line-height: 42px;
@@ -654,6 +732,7 @@ button {
   }
   .intro-bg {
     max-height: 400px;
+
     &__item {
       top: calc(50% - 110px);
       height: 110px;
@@ -680,6 +759,7 @@ button {
   height: calc(100vh + 1100px);
   position: relative;
   margin-bottom: 800px;
+
   &__inner {
     margin: 0 auto;
     max-width: 905px;
@@ -691,10 +771,12 @@ button {
     transform: translateY(200%);
     transition: all 0.5s ease-in-out;
   }
+
   &__inner.active {
     opacity: 1;
     transform: translateY(0);
   }
+
   &__inner::before {
     content: "";
     position: absolute;
@@ -705,20 +787,24 @@ button {
     background-color: var(--main-red);
     border-radius: 50%;
   }
+
   p {
     font-family: 'Montserrat', 'Object Sans';
     font-weight: normal;
     font-size: 35px;
     line-height: 52px;
   }
+
   .line {
     opacity: 0;
     transform: translateY(200%);
     transition: all 0.5s ease-in-out;
   }
+
   .line--first {
     display: inline-block;
   }
+
   .line.active {
     opacity: 1;
     transform: translateY(0);
@@ -741,7 +827,7 @@ button {
   border-radius: 50%;
 }
 
-.user-name  {
+.user-name {
   display: inline-flex;
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -752,29 +838,41 @@ button {
   margin-bottom: -10px;
   margin-left: 5px;
   width: 0;
+
   &.active {
     width: 100%;
     border-right: 3px solid var(--main-red);
     padding: 0 5px 5px 5px;
-    animation: 
-    typing 3.5s steps(30, end),
+    animation: typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
   }
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--main-red) }
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: var(--main-red)
+  }
 }
 
 @keyframes blink-caret--dark-mode {
-  from, to { border-color: transparent }
-  50% { border-color: var(--color-aqua) }
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: var(--color-aqua)
+  }
 }
 
 @media (max-width: 1600px) and (max-height: 800px) {
@@ -791,6 +889,7 @@ button {
       max-width: 777px;
       top: calc((100% - 160px) / 2);
     }
+
     p {
       font-size: 30px;
       line-height: 40px;
@@ -802,6 +901,7 @@ button {
   .about-me {
     margin-bottom: 200px;
     height: fit-content;
+
     &__inner {
       position: relative;
       max-width: 525px;
@@ -809,15 +909,18 @@ button {
       opacity: 1;
       transform: translateY(0);
     }
+
     &__inner::before {
       left: -25px;
       width: 15px;
       height: 15px;
     }
+
     p {
       font-size: 20px;
       line-height: 31px;
     }
+
     .line {
       opacity: 1;
       transform: translateY(0);
@@ -827,8 +930,7 @@ button {
     padding: 0 0 0 5px;
     width: 100%;
     border-right: 3px solid var(--main-red);
-    animation: 
-    typing 3.5s steps(30, end),
+    animation: typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
   }
   .red-dot {
@@ -841,15 +943,18 @@ button {
   .about-me {
     padding: 0 20px;
     margin-bottom: 80px;
+
     &__inner {
       max-width: 400px;
       margin: 0 0 0 20px;
     }
+
     &__inner::before {
       left: -15px;
       width: 10px;
       height: 10px;
     }
+
     p {
       font-size: 15px;
       line-height: 24px;
@@ -874,29 +979,37 @@ button {
     min-width: 545px;
     margin-right: 60px;
   }
+
   &__desc {
     max-width: 740px;
     margin-top: 155px;
   }
+
   &__desc p {
     margin-bottom: 20px;
     line-height: 1.5;
   }
+
   &__desc p:last-child {
     margin-bottom: 0;
   }
+
   &__email {
     font-weight: bold;
   }
+
   &__email:hover {
     text-decoration: underline;
   }
+
   &__list {
     margin-bottom: 20px;
+
     & li {
       position: relative;
       padding-left: 20px;
     }
+
     & li:before {
       content: "\2022";
       position: absolute;
@@ -913,12 +1026,14 @@ button {
 
 .skills {
   height: 1500px;
+
   &__inner {
     display: flex;
     margin-bottom: 200px;
     position: sticky;
     top: 200px;
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -927,12 +1042,14 @@ button {
     width: 100%;
     margin-top: 145px;
   }
+
   &__list-item {
     margin-bottom: 40px;
     margin-right: 40px;
     position: relative;
     width: 280px;
   }
+
   &__list-item::before {
     content: ' ';
     position: absolute;
@@ -943,11 +1060,13 @@ button {
     background-color: var(--main-red);
     border-radius: 20px;
   }
+
   &__list-title {
     font-weight: 800;
     line-height: normal;
     margin-bottom: 25px;
   }
+
   &__sub-list li {
     font: 18px 'Montserrat', sans-serif;
     margin-bottom: 6px;
@@ -957,6 +1076,7 @@ button {
 // Experience section 
 .experience {
   height: 1100px;
+
   &__inner {
     display: flex;
     margin-bottom: 200px;
@@ -967,6 +1087,7 @@ button {
 
 .project-desc {
   height: 600px;
+
   &__inner {
     display: flex;
     position: sticky;
@@ -982,9 +1103,11 @@ button {
 
 .projects {
   margin-bottom: 250px;
+
   &__list {
     margin-top: 50px;
     position: relative;
+
     &::before {
       content: ' ';
       position: absolute;
@@ -997,6 +1120,7 @@ button {
       border-radius: 50%;
     }
   }
+
   &__item {
     display: flex;
     align-items: center;
@@ -1008,6 +1132,7 @@ button {
     border-radius: 8px;
     padding: 60px;
     transition: all .5s ease-in-out;
+
     &::before {
       content: ' ';
       position: absolute;
@@ -1020,16 +1145,19 @@ button {
       border-radius: 50%;
     }
   }
+
   &__heading {
     flex-grow: 1;
     margin-right: 30px;
     cursor: none;
   }
+
   &__title {
     font-size: 60px;
     white-space: nowrap;
     text-transform: uppercase;
   }
+
   &__preview {
     opacity: 0;
     display: none;
@@ -1049,46 +1177,58 @@ button {
       height: 100%;
     }
   }
+
   &__info-wrapp {
     display: flex;
   }
+
   &__info {
     white-space: nowrap;
+
     .info__title {
       margin-bottom: 10px;
       font-weight: bold;
     }
+
     .info__git-link {
       display: block;
       width: auto;
+
       &:hover {
         text-decoration: underline;
       }
     }
+
     .info__git-link.not-link:hover {
       text-decoration: none;
     }
   }
+
   &__info--type {
     margin-right: 30px;
     min-width: 150px;
   }
+
   &__item:hover &__title {
     opacity: 0;
     pointer-events: none;
   }
+
   &__item:hover &__preview {
     opacity: 1;
     display: block;
   }
+
   &__item:hover {
     background-color: var(--color-dark);
     transition: all .5s ease-in-out;
   }
+
   &__item:hover &__info {
     color: var(--color-white);
     transition: all .5s ease-in-out;
   }
+
   &__item:hover::after {
     background: url('../img/system/projects__white-arrow.svg') no-repeat center;
     background-size: cover;
@@ -1099,6 +1239,7 @@ button {
   position: relative;
   height: 600px;
   margin-bottom: 200px;
+
   &__inner {
     display: flex;
     position: sticky;
@@ -1115,6 +1256,7 @@ button {
     max-width: 850px;
     padding-bottom: 95px;
   }
+
   &__author {
     white-space: nowrap;
   }
@@ -1123,15 +1265,19 @@ button {
 .socials {
   display: flex;
   flex-wrap: wrap;
+
   &__item {
     margin-right: 60px;
   }
+
   &__item a {
     text-transform: uppercase;
   }
+
   &__item:last-child {
     margin-right: 0;
   }
+
   &__item:hover {
     text-decoration: underline;
   }
@@ -1142,6 +1288,7 @@ button {
     &__list {
       margin-top: 0;
     }
+
     &__preview {
       left: 150px;
     }
@@ -1214,6 +1361,7 @@ button {
     &__item {
       padding-left: 30px;
     }
+
     &__preview {
       left: 110px;
       width: 400px;
@@ -1241,10 +1389,12 @@ button {
     &__list {
       margin-left: 30px;
     }
+
     &__list-item {
       margin-bottom: 30px;
       margin-right: 30px;
     }
+
     &__list-item::before {
       top: 4px;
       left: -15px;
@@ -1252,9 +1402,11 @@ button {
       height: 10px;
       border-radius: 10px;
     }
+
     &__list-title {
       margin-bottom: 15px;
     }
+
     &__sub-list li {
       font-size: 15px;
     }
@@ -1287,15 +1439,19 @@ button {
       min-width: auto;
       margin-right: 0;
     }
+
     &__desc {
       max-width: 560px;
     }
+
     &__list {
       margin-bottom: 20px;
+
       & li {
         position: relative;
         padding-left: 20px;
       }
+
       & li:before {
         top: 8px;
         font-size: 40px;
@@ -1304,12 +1460,15 @@ button {
   }
   .projects {
     margin-bottom: 80px;
+
     &__item {
       padding: 40px 30px;
     }
+
     &__title {
       font-size: 35px;
     }
+
     &__preview {
       left: 60px;
       width: 320px;
@@ -1323,6 +1482,7 @@ button {
     &__inner {
       padding-bottom: 0;
     }
+
     &__author {
       order: 1;
       margin-bottom: 48px;
@@ -1342,6 +1502,7 @@ button {
     &__item::after {
       right: 25px;
     }
+
     &__info--type {
       display: none;
     }
@@ -1359,12 +1520,15 @@ button {
     &__list {
       margin-left: 20px;
     }
+
     &__list-item {
       margin-right: 0;
     }
+
     &__list-item:last-child {
       margin-bottom: 0;
     }
+
     &__list-title {
       margin-bottom: 10px;
     }
@@ -1374,38 +1538,48 @@ button {
       flex-direction: column;
       align-items: baseline;
     }
+
     &__info-wrapp {
       margin-top: 20px;
     }
+
     &__info--type {
       display: block;
       min-width: 120px;
     }
+
     &__title {
       white-space: normal;
       font-size: 24px;
     }
+
     &__preview {
       display: none;
     }
+
     &__item:hover &__info {
       opacity: 1;
       color: initial;
     }
+
     &__item:hover &__title {
       opacity: 1;
     }
+
     &__item:hover &__preview {
       opacity: 0;
       display: none;
     }
+
     &__item:hover {
       background-color: transparent;
     }
+
     &__item:hover::after {
       background: url('../img/system/projects__red-arrow.svg') no-repeat center;
       background-size: cover;
     }
+
     &__heading {
       cursor: pointer;
     }
@@ -1428,96 +1602,119 @@ button {
 .dark-mode {
   color: var(--color-white);
   background-color: var(--color-dark);
+
   .header {
     border-bottom: 1px solid var(--color-white);
     background-color: var(--color-dark);
   }
+
   .section-heading {
     &::before,
     &::after {
       -webkit-text-stroke: 1px var(--color-white);
     }
   }
+
   .menu {
     &__open-btn {
       color: var(--color-white);
+
       &::before {
         background-color: var(--color-white);
       }
     }
+
     &__opened:hover {
       color: var(--main-white);
     }
   }
+
   .nav {
     background-color: var(--color-aqua);
   }
+
   .projects {
     &__list {
       &::before {
         background-color: var(--color-white);
       }
     }
+
     &__info {
       color: var(--color-white);
     }
+
     &__item {
       &::before {
         background-color: var(--color-white);
       }
     }
+
     &__item::after {
       background: url('../img/system/projects__aqua-arrow.svg') no-repeat center 100%;
       background-size: cover;
     }
   }
+
   .projects__item:hover .projects__info {
     color: var(--color-dark);
   }
+
   .projects__item:hover {
     background-color: var(--color-white);
   }
+
   .dark-theme-btn path {
     fill: var(--color-white);
   }
+
   ::selection {
     background: var(--color-white);
     color: var(--main-dark);
   }
+
   .cursor {
     background-color: rgba(#fff, 1);
   }
+
   .aura {
     background-color: rgba(#05ebfa, .5);
   }
+
   .about-me {
     &__inner::before {
       background-color: var(--color-aqua);
     }
   }
+
   .red-dot {
     background-color: var(--color-aqua);
   }
-  .user-name  {
+
+  .user-name {
     background-color: var(--color-white);
     color: var(--color-dark);
+
     &.active {
       border-right: 3px solid var(--color-aqua);
-      animation: 
-      typing 3.5s steps(30, end),
+      animation: typing 3.5s steps(30, end),
       blink-caret--dark-mode .5s step-end infinite;
     }
   }
+
   .skills__list-item::before {
     background-color: var(--color-aqua);
   }
+
   .cursor {
     background-color: var(--color-aqua) !important;
   }
+
   .scroll-down {
     path {
       fill: var(--color-aqua);
     }
+
     &__text {
       display: none;
     }
@@ -1529,6 +1726,7 @@ button {
     .projects__item:hover .projects__info {
       color: var(--color-white);
     }
+
     .projects__item:hover {
       background-color: var(--color-dark);
     }

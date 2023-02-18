@@ -1,0 +1,7 @@
+node_modules/
+.idea/watcherTasks.xml
+.idea/vcs.xml
+.idea/shaposhnikov.in.iml
+.idea/modules.xml
+.idea/inspectionProfiles/Project_Default.xml
+dist/
