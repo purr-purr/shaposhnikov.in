@@ -1006,7 +1006,7 @@ button {
 
     position: relative;
     border-radius: 8px;
-    padding: 60px 385px 60px 60px;
+    padding: 60px;
     transition: all .5s ease-in-out;
     &::before {
       content: ' ';
@@ -1019,18 +1019,6 @@ button {
       background-color: var(--color-grey);
       border-radius: 50%;
     }
-    &::after {
-      content: ' ';
-      position: absolute;
-      top: calc((100% - 27px) / 2);
-      right: 100px;
-      z-index: 1;
-      width: 42px;
-      height: 27px;
-      pointer-events: none;
-      background: url('../img/system/projects__red-arrow.svg') no-repeat center;
-      background-size: cover;
-    }
   }
   &__heading {
     flex-grow: 1;
@@ -1038,6 +1026,7 @@ button {
     cursor: none;
   }
   &__title {
+    font-size: 60px;
     white-space: nowrap;
     text-transform: uppercase;
   }
@@ -1055,6 +1044,10 @@ button {
     overflow: hidden;
     box-shadow: 0px 0px 5px 0px #222;
     transition: all .5s ease-in-out;
+
+    img {
+      height: 100%;
+    }
   }
   &__info-wrapp {
     display: flex;
@@ -1079,10 +1072,6 @@ button {
   &__info--type {
     margin-right: 30px;
     min-width: 150px;
-  }
-  &__info--github {
-    margin-right: 0;
-    min-width: 105px;
   }
   &__item:hover &__title {
     opacity: 0;
@@ -1148,22 +1137,10 @@ button {
   }
 }
 
-@media (max-width: 1700px) {
-  .projects__item {
-    padding-right: 220px;
-  }
-}
-
 @media (max-width: 1500px) {
   .projects {
     &__list {
       margin-top: 0;
-    }
-    &__item {
-      padding-right: 170px;
-      &::after {
-        right: 35px;
-      }
     }
     &__preview {
       left: 150px;
@@ -1225,20 +1202,9 @@ button {
     margin-top: 0;
   }
   .projects {
-    &__item {
-      &::after {
-        right: 35px;
-        width: 30px;
-        height: 19px;
-        top: calc((100% - 19px) / 2);
-      }
-    }
     &__info--type {
       min-width: 140px;
       margin-right: 20px;
-    }
-    &__title {
-      font-size: 65px;
     }
   }
 }
@@ -1247,7 +1213,6 @@ button {
   .projects {
     &__item {
       padding-left: 30px;
-      padding-right: 100px;
     }
     &__preview {
       left: 110px;
@@ -1259,13 +1224,8 @@ button {
 
 @media (max-width: 1200px) {
   .projects {
-    &__item {
-      &::after {
-        right: 25px;
-      }
-    }
     &__title {
-      font-size: 50px;
+      font-size: 46px;
     }
   }
 }
@@ -1345,10 +1305,7 @@ button {
   .projects {
     margin-bottom: 80px;
     &__item {
-      padding: 40px 100px 40px 30px;
-      &::after {
-        right: 35px;
-      }
+      padding: 40px 30px;
     }
     &__title {
       font-size: 35px;
@@ -1382,17 +1339,11 @@ button {
     padding: 0 40px;
   }
   .projects {
-    &__item {
-      padding-right: 80px;
-    }
     &__item::after {
       right: 25px;
     }
     &__info--type {
       display: none;
-    }
-    &__info--github {
-      margin-right: 20px;
     }
   }
 }
@@ -1423,10 +1374,6 @@ button {
       flex-direction: column;
       align-items: baseline;
     }
-    &__item::after {
-      top: auto;
-      bottom: 55px;
-    }
     &__info-wrapp {
       margin-top: 20px;
     }
@@ -1436,7 +1383,7 @@ button {
     }
     &__title {
       white-space: normal;
-      font-size: 30px;
+      font-size: 24px;
     }
     &__preview {
       display: none;
