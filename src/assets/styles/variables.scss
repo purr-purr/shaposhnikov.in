@@ -1,7 +1,7 @@
 $laptop-bp: 1024px;
 $mobile-bp: 1024px;
 
-.defaultTheme:root {
+.defaultTheme {
   --red: #FF0F00;
   --white: #fff;
   --dark: #222;
@@ -12,5 +12,5 @@ $mobile-bp: 1024px;
 }
 
 .darkTheme {
-  --red: blue;
+
 }

@@ -1,3 +1,29 @@
 .container {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  overflow-y: scroll;
 
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-button {
+    height: 0;
+    width: 100%;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--gray-bg);
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: var(--dark);
+  }
+
+  &::selection {
+    background: var(--dark);
+    color: var(--red);
+  }
 }

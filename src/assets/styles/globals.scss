@@ -2,41 +2,17 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  &::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-
-  &::-webkit-scrollbar-button {
-    height: 0;
-    width: 100%;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--gray-bg);
-    border-radius: 50px;
-  }
-
-  &::-webkit-scrollbar-track-piece {
-    background-color: var(--dark);
-  }
-
-  &::selection {
-    background: var(--dark);
-    color: var(--red);
-  }
-}
-
-html {
-  overflow-x: hidden;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  background-color: var(--gray-bg);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -54,9 +30,11 @@ a {
 }
 
 button {
+  font-family: "Montserrat", sans-serif;
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 :active, :focus {

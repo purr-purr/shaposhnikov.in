@@ -21,22 +21,24 @@ const Layout = ({ children }: LayoutProps) => {
 		handleNavigationMode,
 	};
 
-	useEffect(() => {
-		const element = document.querySelector('body');
-		if (element) {
-			element.setAttribute(
-				'class',
-				`${isNavigationMode ? `defaultTheme darkTheme` : `defaultTheme`}`,
-			);
-		}
-	}, [isNavigationMode]);
+	// useEffect(() => {
+	// 	const element = document.querySelector('html');
+	// 	if (element) {
+	// 		element.setAttribute(
+	// 			'class',
+	// 			`${isNavigationMode ? `defaultTheme darkTheme` : `defaultTheme`}`,
+	// 		);
+	// 	}
+	// }, [isNavigationMode]);
 
 	return (
 		<>
 			<AppContext.Provider value={context}>
-				<Header />
-				<main className={s.container}>{children}</main>
-				<Footer />
+				<main className={cn(s.container, isNavigationMode && 'darkTheme', 'defaultTheme')}>
+					<Header />
+					<section>{children}</section>
+					<Footer />
+				</main>
 			</AppContext.Provider>
 		</>
 	);
