@@ -1,9 +1,21 @@
 .container {
+  padding-bottom: 94px;
+}
 
+.signature {
+  width: fit-content;
+  margin-bottom: -20px;
 }
 
 .socials {
-  &-list {
+  @include flex-align(center);
+  gap: 60px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 
+  &-list {
+    font-size: 18px;
+    text-transform: uppercase;
   }
 }

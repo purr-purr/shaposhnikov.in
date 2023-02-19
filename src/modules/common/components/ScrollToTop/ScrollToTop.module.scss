@@ -1,0 +1,31 @@
+.container {
+  position: fixed;
+  bottom: 60px;
+  left: 30px;
+  z-index: 9;
+  width: 42px;
+  height: 42px;
+  mix-blend-mode: exclusion;
+  cursor: pointer;
+  animation: scroll-down-levitation 3s infinite ease-in-out;
+
+  path {
+    fill: var(--red);
+  }
+}
+
+.isScrollDown {
+  transform: rotate(180deg);
+}
+
+@keyframes scroll-down-levitation {
+  from {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}

@@ -5,7 +5,11 @@ import { useRouter } from 'next/router';
 import * as gtag from '@utils/gtag';
 
 import '@styles/globals.scss';
+import Head from 'next/head';
+
 import Layout from '@modules/layout/components/Layout';
+
+import { APP_META_TITLE } from '@utils/const';
 
 export default function App({ Component, pageProps }: AppProps) {
 	const router = useRouter();
@@ -22,8 +26,13 @@ export default function App({ Component, pageProps }: AppProps) {
 	}, [router.events]);
 
 	return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
+		<>
+			<Head>
+				<title>{APP_META_TITLE}</title>
+			</Head>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</>
 	);
 }

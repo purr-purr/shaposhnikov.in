@@ -1,1 +1,25 @@
-.container {}
+.container {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 80px;
+  min-width: 545px;
+  padding-bottom: 83px;
+  width: max-content;
+  color: var(--dark);
+
+  &:before, &:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    -webkit-text-stroke: 1px var(--dark);
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:before {
+    top: 50px;
+  }
+
+  &:after {
+    top: 100px;
+  }
+}

@@ -9,15 +9,11 @@ import s from './Navigation.module.scss';
 const Navigation = () => {
 	const { handleNavigationMode } = useContext(AppContext);
 	return (
-		<nav className={s.container}>
+		<nav className={s.container} onClick={() => handleNavigationMode(false)}>
 			<ul>
 				{NAVIGATION_LIST.map((item) => (
 					<li key={item}>
-						<a
-							href={`#${item.toLowerCase()}`}
-							className={s.item}
-							onClick={() => handleNavigationMode(false)}
-						>
+						<a href={`#${item.toLowerCase()}`} className={s.item}>
 							{item}
 						</a>
 					</li>

@@ -6,40 +6,34 @@ import {
 	APP_LINK,
 	APP_META_DESC,
 	APP_META_KEY_WORDS,
-	APP_TITLE,
+	APP_META_TITLE,
 	GA_TRACKING_ID,
 } from '@utils/const';
 
 export default function Document() {
 	const isProduction = process.env.NODE_ENV === 'production';
 	const manifestPath = '/assets/manifest.webmanifest';
-	const appTitle = APP_AUTHOR + ' ' + APP_TITLE;
-
-	const FAVICON = '@/assets/favicon.ico';
-	const LOGO = '@/assets/logo.svg';
+	const FAVICON = '/assets/favicon.ico';
+	const LOGO = '/assets/logo.png';
 	return (
 		<Html lang="en">
 			<Head>
-				<meta charSet="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link href={FAVICON} rel="icon" />
-				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<meta content="#F9F9F9" name="theme-color" />
 				<meta content={APP_META_DESC} name="description" />
 				<link href={FAVICON} rel="apple-touch-icon" />
 				<link href={manifestPath} rel="manifest" />
-				<title>{appTitle}</title>
 				<meta name="description" content={APP_META_DESC} />
 				<meta name="keywords" content={APP_META_KEY_WORDS} />
 				<meta name="author" content={APP_AUTHOR + ' ' + APP_AUTHOR_SIGNATURE} />
 				<meta name="image" content={LOGO} />
 				<meta property="og:type" content="website" />
-				<meta property="og:title" content={appTitle} />
+				<meta property="og:title" content={APP_META_TITLE} />
 				<meta property="og:description" content={APP_META_DESC} />
 				<meta property="og:image" content={LOGO} />
 				<meta property="og:url" content={APP_LINK} />
 				<link rel="canonical" href={APP_LINK} />
-				<meta name="apple-mobile-web-app-title" content={appTitle} />
+				<meta name="apple-mobile-web-app-title" content={APP_META_TITLE} />
 				<meta name="apple-mobile-web-app-capable" content="yes" />
 				<meta name="format-detection" content="telephone=no" />
 				<meta name="format-detection" content="address=no" />

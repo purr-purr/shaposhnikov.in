@@ -1,8 +1,17 @@
-import s from './Home.module.scss';
+import Contacts from '@modules/home/components/Contacts';
+import Experience from '@modules/home/components/Experience';
+import Projects from '@modules/home/components/Projects';
+import Skills from '@modules/home/components/Skills';
 
 const Home = () => {
-	return <div className={s.container}>home page
-	<div className={s.test}>1</div></div>;
+	return (
+		<>
+			<Skills />
+			<Experience />
+			<Projects />
+			<Contacts />
+		</>
+	);
 };
 
 export default Home;
