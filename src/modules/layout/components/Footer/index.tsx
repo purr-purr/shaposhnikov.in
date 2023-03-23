@@ -8,7 +8,7 @@ const Footer = () => {
 
 	return (
 		<footer className={s.container}>
-			<p className={s.signature}>{`2020-${currentYear} — ${APP_AUTHOR}`}</p>
+			<p className={s.signature}>{`© 2020-${currentYear} — ${APP_AUTHOR}`}</p>
 			<ul className={s.socials}>
 				{SOCIALS_LIST.map((item) => (
 					<li key={item.title}>

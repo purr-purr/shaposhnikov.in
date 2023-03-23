@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
 	const [isNavigationMode, setIsNavigationMode] = useState(false);
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	const [isScrollDown, setIsScrollDown] = useState(false);
-	const [starRotateDegree, setStarRotateDegree] = useState(0);
+	const [isScrollPosition, setIsScrollPosition] = useState(0);
 
 	const handleNavigationMode = useCallback((value: boolean) => {
 		setIsNavigationMode(value);
@@ -25,16 +25,22 @@ const Layout = ({ children }: LayoutProps) => {
 		setIsDarkMode(value);
 	}, []);
 
+	const handleScrollPosition = useCallback((value: number) => {
+		setIsScrollPosition(value);
+	}, []);
+
 	const context = {
 		isNavigationMode,
 		isDarkMode,
+		isScrollPosition,
 		handleNavigationMode,
 		handleDarkMode,
+		handleScrollPosition,
 	};
 
 	const handleScroll = (e: any) => {
 		const { scrollHeight, scrollTop, clientHeight } = e.target;
-		setStarRotateDegree(scrollTop);
+		setIsScrollPosition(scrollTop);
 
 		const isPageBottom = scrollHeight - scrollTop === clientHeight;
 		isPageBottom ? setIsScrollDown(true) : setIsScrollDown(false);
@@ -54,7 +60,7 @@ const Layout = ({ children }: LayoutProps) => {
 						<Footer />
 					</section>
 					<ScrollToTop isScrollDown={isScrollDown} />
-					<Star degree={starRotateDegree} />
+					<Star degree={isScrollPosition} />
 				</main>
 			</AppContext.Provider>
 		</>

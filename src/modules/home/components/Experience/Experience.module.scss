@@ -1,5 +1,19 @@
 .container {
-  @include flex-align(flex-end);
+  @include flex-align(flex-start);
   gap: 63px;
-  margin-bottom: 176px;
+  margin-bottom: 200px;
+}
+
+.info {
+  margin-top: 170px;
+  line-height: 1.5;
+
+  p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.list {
+  padding-left: 20px;
+  margin-bottom: 20px;
 }

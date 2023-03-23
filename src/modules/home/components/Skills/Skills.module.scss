@@ -1,5 +1,28 @@
 .container {
-  @include flex-align(flex-end);
+  @include flex-align(flex-start);
   gap: 63px;
-  margin-bottom: 176px;
+  margin-bottom: 200px;
+  margin-top: 500px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 170px;
+
+  &-item {
+    max-width: 276px;
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  &-title {
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  &-subItem:not(:last-child) {
+    margin-bottom: 6px;
+  }
 }

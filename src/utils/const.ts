@@ -1,8 +1,8 @@
 export const APP_LINK = 'https://shaposhnikov.in/';
 export const APP_AUTHOR = 'Shaposhnikov Anton ';
 export const APP_AUTHOR_EMAIL = 'shaposhnikov.web@gmail.com';
-export const APP_TITLE = '🤟 | Web-Developer Portfolio';
-export const APP_META_TITLE = APP_AUTHOR + ' ' + APP_TITLE;
+export const APP_TITLE = 'Web-Developer Portfolio';
+export const APP_META_TITLE = APP_AUTHOR + ' 🤟 | ' + APP_TITLE;
 export const APP_AUTHOR_SIGNATURE = '=> shaposhnikov.in';
 export const APP_META_DESC =
 	'My name is Anton. I am a front-end developer and now I am looking for permanent remote work';

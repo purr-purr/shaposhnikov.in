@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Dot/Dot.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Dot/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/home/assets/introduce/web-dev.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/home/components/Introduce/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Experience/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Experience/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Skills/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Skills/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/context/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/context/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/const.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/messages.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +53,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DEVELOPMENT/GitHub/PERSONAL/shaposhnikov.in/public/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "last_opened_file_path": "D:/DEVELOPMENT/GitHub/PERSONAL/shaposhnikov.in/src/modules/home/assets/introduce",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\assets\introduce" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets\favicon" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\components" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\icons\components" />
-      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\common\assets\navigation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\icons\components" />
@@ -71,6 +94,7 @@
       <workItem from="1676807565456" duration="18409000" />
       <workItem from="1676926075251" duration="592000" />
       <workItem from="1676992034950" duration="4000" />
+      <workItem from="1679579700712" duration="16025000" />
     </task>
     <servers />
   </component>

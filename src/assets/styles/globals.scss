@@ -45,6 +45,7 @@ button {
 
 ::selection {
   background-color: #222;
+  mix-blend-mode: difference;
   color: #FF0F00;
 }
 
@@ -65,4 +66,26 @@ button {
 
 ::-webkit-scrollbar-track-piece {
   background-color: #222;
+}
+
+.decorate-dot {
+  position: relative;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
+    border-radius: 20px;
+  }
+
+  &--xs:before {
+    top: 9px;
+    left: -15px;
+    width: 7px;
+    height: 7px;
+  }
 }
