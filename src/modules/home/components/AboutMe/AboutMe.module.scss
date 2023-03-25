@@ -1,7 +1,4 @@
 .container {
-  @include flex-align(flex-start);
-  gap: 63px;
-
   height: calc(100vh + 1100px);
   position: relative;
   margin-bottom: 800px;
@@ -15,10 +12,8 @@
   max-width: 905px;
   width: 100%;
   height: fit-content;
-  //opacity: 1;
-  //transform: translateY(200%);
-
-  transform: translateY(0);
+  opacity: 0;
+  transform: translateY(200%);
   transition: all 0.5s ease-in-out;
 
   p {
@@ -31,26 +26,55 @@
   display: inline-flex;
   background-color: var(--dark);
   color: var(--white);
-  padding: 0;
+
   max-width: fit-content;
   overflow: hidden;
   letter-spacing: .15em;
   margin-bottom: -10px;
-  margin-left: 5px;
+  margin-left: 105px;
   width: 0;
 
   &.active {
     width: 100%;
     border-right: 3px solid var(--red);
-    padding: 0 5px 5px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
     animation: typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
   }
 }
 
+.firstLine {
+  position: relative;
+}
+
+.hello {
+  position: absolute;
+  left: calc((100% - 100px) / 2);
+  transition: left .3s linear;
+
+  &.active {
+    left: 0;
+    transition: left .3s linear;
+  }
+}
+
+.line {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(200%);
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
   to {
     width: 100%
@@ -59,7 +83,7 @@
 
 @keyframes blink-caret {
   from, to {
-    border-color: transparent
+    border-color: transparent;
   }
   50% {
     border-color: var(--red)

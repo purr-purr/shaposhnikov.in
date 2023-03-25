@@ -1,6 +1,5 @@
 import { useCallback, useState } from 'react';
 
-import ScrollToTop from '@modules/common/components/ScrollToTop';
 import Star from '@modules/common/components/Star';
 import Footer from '@modules/layout/components/Footer';
 import Header from '@modules/layout/components/Header';
@@ -15,7 +14,8 @@ const Layout = ({ children }: LayoutProps) => {
 	const [isNavigationMode, setIsNavigationMode] = useState(false);
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	const [isScrollDown, setIsScrollDown] = useState(false);
-	const [isScrollPosition, setIsScrollPosition] = useState(0);
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const [pageHeight, setPageHeight] = useState(0);
 
 	const handleNavigationMode = useCallback((value: boolean) => {
 		setIsNavigationMode(value);
@@ -26,13 +26,13 @@ const Layout = ({ children }: LayoutProps) => {
 	}, []);
 
 	const handleScrollPosition = useCallback((value: number) => {
-		setIsScrollPosition(value);
+		setScrollPosition(value);
 	}, []);
 
 	const context = {
 		isNavigationMode,
 		isDarkMode,
-		isScrollPosition,
+		scrollPosition,
 		handleNavigationMode,
 		handleDarkMode,
 		handleScrollPosition,
@@ -40,10 +40,16 @@ const Layout = ({ children }: LayoutProps) => {
 
 	const handleScroll = (e: any) => {
 		const { scrollHeight, scrollTop, clientHeight } = e.target;
-		setIsScrollPosition(scrollTop);
 
-		const isPageBottom = scrollHeight - scrollTop === clientHeight;
-		isPageBottom ? setIsScrollDown(true) : setIsScrollDown(false);
+		setScrollPosition(scrollTop);
+
+		const scrollBeginning = scrollTop || 0;
+		const totalHeight = scrollHeight - clientHeight;
+		const calcScrollPercent = (scrollBeginning / totalHeight) * 100;
+		const scrollPercent = Number(calcScrollPercent.toFixed(0));
+		setPageHeight(scrollPercent);
+
+		scrollPercent === 100 ? setIsScrollDown(true) : setIsScrollDown(false);
 	};
 
 	return (
@@ -59,8 +65,7 @@ const Layout = ({ children }: LayoutProps) => {
 						{children}
 						<Footer />
 					</section>
-					<ScrollToTop isScrollDown={isScrollDown} />
-					<Star degree={isScrollPosition} />
+					<Star degree={scrollPosition} percent={pageHeight} />
 				</main>
 			</AppContext.Provider>
 		</>

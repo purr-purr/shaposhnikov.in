@@ -4,4 +4,20 @@
   height: 100%;
   margin-left: auto;
   font-size: 20px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100vh;
+    background-color: var(--dark);
+    transition: all 0.5s ease-in-out;
+  }
+
+  &--short:before {
+    height: 120px;
+  }
 }

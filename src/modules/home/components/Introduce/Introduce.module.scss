@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh + 200px);
+  height: calc(100vh + 400px);
   width: 100%;
 }
 
@@ -16,9 +16,13 @@
     top: calc((100% - 500px) / 2);
     width: 100%;
     opacity: 1;
-    filter: alpha(opacity=100);
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
+  }
+
+  &-item.hidden {
+    opacity: 0;
+    transform: translateX(100%);
   }
 
   img {
@@ -45,14 +49,11 @@
   z-index: 5;
   margin-left: 120px;
   opacity: 1;
-  filter: alpha(opacity=100);
   transform: translateX(0);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s linear;
 
   &.hidden {
-    visibility: hidden;
     opacity: 0;
-    filter: alpha(opacity=0);
     transform: translateX(-100%);
   }
 

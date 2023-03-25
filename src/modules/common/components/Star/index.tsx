@@ -7,15 +7,16 @@ import s from './Star.module.scss';
 
 const Star: FC<{
 	degree: number;
-}> = ({ degree }) => {
+	percent: number;
+}> = ({ degree, percent }) => {
 	const { isDarkMode, handleDarkMode } = useContext(AppContext);
 	return (
 		<figure
 			className={s.container}
-			style={{ transform: `rotate(${degree / 10}deg)` }}
 			onClick={() => handleDarkMode(!isDarkMode)}
+			data-text={percent + '%'}
 		>
-			<StarIcon />
+			<StarIcon style={{ transform: `rotate(${degree / 10}deg)` }} />
 		</figure>
 	);
 };

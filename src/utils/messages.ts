@@ -1,5 +1,6 @@
 const messages = {
-	ANTON_SHAPOSHNIKOV: 'Anton Shaposhnikov',
+	ANTON: 'Anton',
+	SHAPOSHNIKOV: 'Shaposhnikov',
 	SAY_HELLO: 'say hello',
 	EXPERIENCE: 'experience',
 	PROJECTS: 'projects',

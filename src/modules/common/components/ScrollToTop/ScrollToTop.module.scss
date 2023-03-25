@@ -9,13 +9,18 @@
   cursor: pointer;
   animation: scroll-down-levitation 3s infinite ease-in-out;
 
+  svg {
+    transition: transform .3s ease-in-out;
+  }
+
   path {
     fill: var(--red);
   }
 }
 
-.isScrollDown {
+.isScrollDown svg {
   transform: rotate(180deg);
+  transition: transform .3s ease-in-out;
 }
 
 @keyframes scroll-down-levitation {
