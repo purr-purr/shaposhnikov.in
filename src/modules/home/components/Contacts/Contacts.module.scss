@@ -1,9 +1,15 @@
 .container {
-  @include flex-align(flex-end);
-  gap: 63px;
+  height: 600px;
   margin-bottom: 200px;
 }
 
+.inner {
+  @include flex-align(flex-end);
+  gap: 63px;
+  position: sticky;
+  top: 400px;
+}
+
 .email {
-  font-weight: 700;
+  font-weight: 600;
 }

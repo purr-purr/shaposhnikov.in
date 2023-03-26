@@ -6,7 +6,9 @@ const messages = {
 	PROJECTS: 'projects',
 	SKILLS: 'skills',
 	CONTACTS: 'contacts',
+	LIVE: 'Live',
 	MENU: 'menu',
+	WAS_USED: 'was used',
 	A_FEW_OF_MY_LATEST_PROJECTS:
 		"A few of my latest projects that i've been" + ' involved in.',
 	HELLO: 'Hello',

@@ -1,6 +1,9 @@
 .container {
+  margin-bottom: 176px;
+}
+
+.inner {
   @include flex-align(flex-end);
   gap: 63px;
-  margin-bottom: 176px;
-  padding-bottom: 400px;
+  margin-bottom: 100px;
 }

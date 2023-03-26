@@ -1,3 +1,5 @@
+import TextLink from '@modules/common/components/TextLink';
+
 import { APP_AUTHOR } from '@utils/const';
 import { SOCIALS_LIST } from '@utils/data';
 
@@ -12,9 +14,11 @@ const Footer = () => {
 			<ul className={s.socials}>
 				{SOCIALS_LIST.map((item) => (
 					<li key={item.title}>
-						<a href={`#${item.link}`} className={s[`socials-list`]}>
-							{item.title}
-						</a>
+						<TextLink
+							href={item.link}
+							title={item.title}
+							className={s[`socials-list`]}
+						/>
 					</li>
 				))}
 			</ul>

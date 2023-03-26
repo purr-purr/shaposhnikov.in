@@ -1,7 +1,7 @@
 .container {
   height: calc(100vh + 1100px);
   position: relative;
-  margin-bottom: 800px;
+  margin-bottom: 600px;
 }
 
 .inner {
@@ -31,7 +31,7 @@
   overflow: hidden;
   letter-spacing: .15em;
   margin-bottom: -10px;
-  margin-left: 105px;
+  margin-left: 95px;
   width: 0;
 
   &.active {

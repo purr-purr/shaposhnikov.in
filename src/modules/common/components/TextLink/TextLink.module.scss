@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    transition: width .3s ease-in-out;
+    background-color: var(--dark);
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      transition: width .3s ease-in-out;
+    }
+  }
+}
