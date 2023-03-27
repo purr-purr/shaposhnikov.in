@@ -2,28 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/common/components/TextLink/TextLink.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/common/components/TextLink/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectList/ProjectList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Dot/Dot.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Dot/Dot.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navigation/Navigation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navigation/Navigation.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/NavigationButton/NavigationButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/NavigationButton/NavigationButton.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/ScrollToTop/ScrollToTop.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/ScrollToTop/ScrollToTop.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Star/Star.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Star/Star.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Star/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Star/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/TextLink/TextLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/TextLink/TextLink.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Contacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Contacts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Projects/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectList/ProjectList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectList/ProjectList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/context/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/context/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/messages.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +93,8 @@
       <workItem from="1679579700712" duration="16277000" />
       <workItem from="1679761732095" duration="13179000" />
       <workItem from="1679844485586" duration="17573000" />
+      <workItem from="1679916577825" duration="874000" />
+      <workItem from="1679936807103" duration="8180000" />
     </task>
     <servers />
   </component>

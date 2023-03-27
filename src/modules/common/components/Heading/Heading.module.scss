@@ -6,13 +6,13 @@
   min-width: 545px;
   padding-bottom: 83px;
   width: max-content;
-  color: var(--dark);
+  color: $dark;
 
   &:before, &:after {
     content: attr(data-text);
     position: absolute;
     left: 0;
-    -webkit-text-stroke: 1px var(--dark);
+    -webkit-text-stroke: 1px $dark;
     -webkit-text-fill-color: transparent;
   }
 

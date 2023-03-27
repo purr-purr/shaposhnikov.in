@@ -2,7 +2,7 @@
   @include flex-align(center);
   width: 100%;
   height: 100vh;
-  background-color: var(--red);
+  background-color: $red;
   padding-left: 17%;
   z-index: 98;
   cursor: url('../../assets/navigation/navigation_close.svg'), auto;
@@ -15,12 +15,12 @@
   font-weight: 800;
   font-size: 80px;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px var(--dark);
+  -webkit-text-stroke: 2px $dark;
   -webkit-text-fill-color: transparent;
   padding-top: 25px;
   padding-bottom: 25px;
 
   &:hover {
-    -webkit-text-fill-color: var(--dark);
+    -webkit-text-fill-color: $dark;
   }
 }

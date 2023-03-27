@@ -5,9 +5,9 @@
   z-index: 100;
   width: calc(100% - 5px);
   height: 120px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid $grey;
   mix-blend-mode: difference;
-  background-color: var(--white);
+  background-color: $white;
 }
 
 .offMixBlendMode {

@@ -26,6 +26,7 @@ export const SKILLS_LIST = [
 			'Ant-design / MUI',
 			'Styled Components',
 			'Chakra UI',
+			'JQuery',
 			'Gulp / WebPack',
 			'Git / GitHub',
 			'Npm / Yarn',
@@ -33,12 +34,22 @@ export const SKILLS_LIST = [
 	},
 	{
 		title: 'Other',
-		list: ['Axios / Fetch Api', 'JQuery', 'Mobile First CSS', 'React'],
+		list: ['Agile', 'RESTful API', 'Mobile First CSS'],
 	},
-	{ title: 'English', list: ['B1 (Intermediate)'] },
+	{
+		title: 'Languages',
+		list: ['English (B1 Intermediate)', 'Ukrainian (Fluent)'],
+	},
 ];
 
 export const PROJECTS_LIST = [
+	{
+		title: 'app.dehive.finance',
+		link: 'https://app.dehive.finance/',
+		use: 'React.JS',
+		year: 2022,
+		poster: '/',
+	},
 	{
 		title: 'cheatsheets-js.com',
 		link: 'https://cheatsheets-js.com/',
@@ -47,10 +58,24 @@ export const PROJECTS_LIST = [
 		poster: '/',
 	},
 	{
+		title: 'app.leaguedao.com',
+		link: 'https://app.leaguedao.com/megaleague/overview',
+		use: 'Next.JS',
+		year: 2022,
+		poster: '/',
+	},
+	{
 		title: 'alinahuz.com',
 		link: 'https://alinahuz.com/',
 		use: 'React.JS',
 		year: 2022,
+		poster: '/',
+	},
+	{
+		title: 'hamaiun.com.ua',
+		link: 'https://hamaiun.com.ua/',
+		use: 'Vanilla JS',
+		year: 2023,
 		poster: '/',
 	},
 	{
@@ -88,16 +113,16 @@ export const EXPERIENCE_LIST = [
 		intro:
 			'Commercial experience in web development for about 3-years in Ukrainian companies and in International projects.',
 		description:
-			'I have experience of working in a Blockchain, E-commerce and Gambling domains. Also, in a large team, and a close interaction with teammates.',
+			'I have experience of working in a Blockchain, E-commerce and Gambling domains. Also, in a large team, and in close collaboration with colleagues.',
 		achievement: [
 			'Proficient knowledge of web markup, including responsive UI' +
 				' and Mobile First CSS.',
-			'3+ years of experience in front-end development.',
-			'3+ years of experience with JavaScript, HTML5, CSS3' +
-				' (SASS/SCSS/PostCSS), JQuery, Gulp, WebPack, and GitHub.',
-			'1.5 years of experience with TypeScript, ReactJS, Redux, Next.js, Styled' +
-				' Components, Chakra UI.',
-			'half a year of experience with React Native.',
+			'3+ years of experience in front-end development, includes JavaScript,' +
+				' HTML5, CSS3' +
+				' (SCSS/PostCSS), JQuery, Gulp, WebPack, and GitHub.',
+			'1.5+ years of experience with TypeScript, ReactJS, Redux, Next.js,' +
+				' Styled Components, Chakra UI.',
+			'Half a year of experience with React Native.',
 		],
 	},
 ];

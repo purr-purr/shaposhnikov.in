@@ -9,7 +9,7 @@
     height: 1px;
     width: 0;
     transition: width .3s ease-in-out;
-    background-color: var(--dark);
+    background-color: $dark;
   }
 
   &:hover {

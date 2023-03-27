@@ -1,28 +1,26 @@
-import { useCallback, useState } from 'react';
+import { CSSProperties, useCallback, useEffect, useState } from 'react';
 
 import Star from '@modules/common/components/Star';
 import Footer from '@modules/layout/components/Footer';
 import Header from '@modules/layout/components/Header';
 import AppContext from '@modules/layout/context';
-import cn from 'classnames';
 
 import { LayoutProps } from '@modules/layout/types';
 
 import s from './Layout.module.scss';
 
+interface CursorPosition {
+	x: number;
+	y: number;
+}
+
 const Layout = ({ children }: LayoutProps) => {
 	const [isNavigationMode, setIsNavigationMode] = useState(false);
-	const [isDarkMode, setIsDarkMode] = useState(false);
-	const [isScrollDown, setIsScrollDown] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [pageHeight, setPageHeight] = useState(0);
 
 	const handleNavigationMode = useCallback((value: boolean) => {
 		setIsNavigationMode(value);
-	}, []);
-
-	const handleDarkMode = useCallback((value: boolean) => {
-		setIsDarkMode(value);
 	}, []);
 
 	const handleScrollPosition = useCallback((value: number) => {
@@ -31,10 +29,8 @@ const Layout = ({ children }: LayoutProps) => {
 
 	const context = {
 		isNavigationMode,
-		isDarkMode,
 		scrollPosition,
 		handleNavigationMode,
-		handleDarkMode,
 		handleScrollPosition,
 	};
 
@@ -48,18 +44,39 @@ const Layout = ({ children }: LayoutProps) => {
 		const calcScrollPercent = (scrollBeginning / totalHeight) * 100;
 		const scrollPercent = Number(calcScrollPercent.toFixed(0));
 		setPageHeight(scrollPercent);
+	};
 
-		scrollPercent === 100 ? setIsScrollDown(true) : setIsScrollDown(false);
+	const [cursorPosition, setCursorPosition] = useState<CursorPosition>({
+		x: 0,
+		y: 0,
+	});
+
+	useEffect(() => {
+		const handleMouseMove = (event: MouseEvent) => {
+			setCursorPosition({ x: event.clientX, y: event.clientY });
+		};
+
+		window.addEventListener('mousemove', handleMouseMove);
+
+		return () => {
+			window.removeEventListener('mousemove', handleMouseMove);
+		};
+	}, []);
+
+	const cursorStyle: CSSProperties = {
+		transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
 	};
 
 	return (
 		<>
 			<AppContext.Provider value={context}>
-				<main
-					className={cn(s.container, isDarkMode && 'darkMode', 'defaultMode')}
-					onScroll={(e) => handleScroll(e)}
-					id="main"
-				>
+				<main className={s.container} onScroll={(e) => handleScroll(e)} id="main">
+					{!isNavigationMode && (
+						<>
+							<span style={cursorStyle} className={s.cursor} />
+							<span style={cursorStyle} className={s.aura} />
+						</>
+					)}
 					<Header />
 					<section className={s.inner}>
 						{children}

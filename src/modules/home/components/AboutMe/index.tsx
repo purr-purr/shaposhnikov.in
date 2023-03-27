@@ -18,12 +18,11 @@ const AboutMe = () => {
 		<article className={s.container}>
 			<div className={cn(s.inner, getActiveStateClassName(500))}>
 				<p className={s.firstLine}>
-					<span className={cn(s.hello, getActiveStateClassName(800))}>
-						{messages.HELLO}{' '}
-					</span>
+					<span className={cn(getActiveStateClassName(800))}>{messages.HELLO} </span>
 					<span className={cn(s.userName, getActiveStateClassName(1200))}>
 						{messages.USERNAME}{' '}
 					</span>
+					!
 					<span className={cn(s.line, getActiveStateClassName(1450))}>
 						{messages.GLAD_TO_SEE_YOU_HERE}
 					</span>

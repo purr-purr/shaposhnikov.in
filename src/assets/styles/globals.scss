@@ -48,9 +48,9 @@ button {
 }
 
 ::selection {
-  background-color: #222;
+  background-color: $dark;
   mix-blend-mode: difference;
-  color: #FF0F00;
+  color: $red;
 }
 
 ::-webkit-scrollbar {
@@ -64,12 +64,12 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F5F5F5;
+  background-color: $gray-bg;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: #222;
+  background-color: $dark;
 }
 
 .decorate-dot {
@@ -82,7 +82,7 @@ button {
     left: 0;
     width: 20px;
     height: 20px;
-    background-color: var(--red);
+    background-color: $red;
     border-radius: 20px;
   }
 

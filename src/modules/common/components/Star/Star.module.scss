@@ -15,13 +15,13 @@
     top: calc((100% - 12px) / 2);
     left: calc((100% - 23px) / 2);
     font-size: 11px;
-    color: var(--grey);
+    color: $grey;
     min-width: 23px;
     text-align: center;
     z-index: 1;
   }
 
   path {
-    fill: var(--dark);
+    fill: $dark;
   }
 }

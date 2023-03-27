@@ -53,7 +53,7 @@
 
   svg {
     transform: rotate(235deg);
-    fill: var(--red);
+    fill: $red;
     transition: transform .3s ease-in-out;
   }
 }

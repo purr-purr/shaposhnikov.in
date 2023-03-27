@@ -24,19 +24,17 @@
 
 .userName {
   display: inline-flex;
-  background-color: var(--dark);
-  color: var(--white);
-
+  background-color: $dark;
+  color: $white;
   max-width: fit-content;
   overflow: hidden;
   letter-spacing: .15em;
   margin-bottom: -10px;
-  margin-left: 95px;
   width: 0;
 
   &.active {
     width: 100%;
-    border-right: 3px solid var(--red);
+    border-right: 3px solid $red;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -47,17 +45,6 @@
 
 .firstLine {
   position: relative;
-}
-
-.hello {
-  position: absolute;
-  left: calc((100% - 100px) / 2);
-  transition: left .3s linear;
-
-  &.active {
-    left: 0;
-    transition: left .3s linear;
-  }
 }
 
 .line {
@@ -86,6 +73,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: var(--red)
+    border-color: $red
   }
 }

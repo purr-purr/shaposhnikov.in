@@ -1,7 +1,6 @@
-import { FC, useContext } from 'react';
+import { FC } from 'react';
 
 import StarIcon from '@modules/icons/components/StarIcon';
-import AppContext from '@modules/layout/context';
 
 import s from './Star.module.scss';
 
@@ -9,11 +8,22 @@ const Star: FC<{
 	degree: number;
 	percent: number;
 }> = ({ degree, percent }) => {
-	const { isDarkMode, handleDarkMode } = useContext(AppContext);
+	const handleScrollPosition = () => {
+		const mainBlock =
+			typeof window !== 'undefined' && document.getElementById('main');
+
+		if (mainBlock) {
+			mainBlock.scrollTo({
+				top: percent > 90 ? 0 : mainBlock.scrollHeight,
+				behavior: 'smooth',
+			});
+		}
+	};
+
 	return (
 		<figure
 			className={s.container}
-			onClick={() => handleDarkMode(!isDarkMode)}
+			onClick={handleScrollPosition}
 			data-text={percent + '%'}
 		>
 			<StarIcon style={{ transform: `rotate(${degree / 10}deg)` }} />
