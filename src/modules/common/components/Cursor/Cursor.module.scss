@@ -1,0 +1,27 @@
+.cursor, .aura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  margin-top: -4px;
+  background-color: $dark;
+  transition: transform 0.1s linear;
+}
+
+.aura {
+  width: 46px;
+  height: 46px;
+  background-color: $dark-red;
+  mix-blend-mode: difference;
+  margin-left: -23px;
+  margin-top: -23px;
+  transition: transform 0.4s linear;
+}

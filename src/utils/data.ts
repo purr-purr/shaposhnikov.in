@@ -111,18 +111,16 @@ export const PROJECTS_LIST = [
 export const EXPERIENCE_LIST = [
 	{
 		intro:
-			'Commercial experience in web development for about 3-years in Ukrainian companies and in International projects.',
+			'I have garnered substantial commercial experience in web development' +
+			' over a period of 3-years while working with Ukrainian companies and' +
+			' participating in international projects.\n',
 		description:
-			'I have experience of working in a Blockchain, E-commerce and Gambling domains. Also, in a large team, and in close collaboration with colleagues.',
+			'I possess significant experience in working in various domains, such as Blockchain, E-commerce, and Gambling, and have successfully worked in large teams while closely collaborating with my colleagues.',
 		achievement: [
-			'Proficient knowledge of web markup, including responsive UI' +
-				' and Mobile First CSS.',
-			'3+ years of experience in front-end development, includes JavaScript,' +
-				' HTML5, CSS3' +
-				' (SCSS/PostCSS), JQuery, Gulp, WebPack, and GitHub.',
-			'1.5+ years of experience with TypeScript, ReactJS, Redux, Next.js,' +
-				' Styled Components, Chakra UI.',
-			'Half a year of experience with React Native.',
+			'Proficient in web markup, responsive UI, and Mobile First CSS',
+			'3+ years of front-end development experience, including JavaScript, HTML5, CSS3 (SCSS/PostCSS), JQuery, Gulp, WebPack, and GitHub',
+			'1.5+ years of experience in TypeScript, ReactJS, Redux, Next.js, Styled Components, and Chakra UI',
+			'6 months of experience with React Native',
 		],
 	},
 ];

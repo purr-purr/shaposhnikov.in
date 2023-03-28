@@ -1,1 +1,4 @@
-export interface IName {}
+export interface ICursorPosition {
+	x: number;
+	y: number;
+}

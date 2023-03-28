@@ -13,11 +13,12 @@ const messages = {
 		"A few of my latest projects that i've been" + ' involved in.',
 	HELLO: 'Hello',
 	USERNAME: '${userName}',
-	GLAD_TO_SEE_YOU_HERE: 'Glad to see you here.',
-	MY_NAME_IS_ANTON: "My name is Anton, I'm a front-end developer.",
-	I_AM_CURRENTLY_OPEN_TO_NEW_OPPORTUNITIES:
-		"I'm currently open to new opportunities.",
-	I_WILL_BE_GLAD_TO_COOPERATE: 'I will be glad to cooperate.',
+	IM_A_FRONT_END_DEVELOPER: "I'm a front-end developer",
+	I_HAVE_MORE_THAN_THREE_YEARS:
+		'I have more than 3 years of commercial' + ' experience.',
+	AND_I_BUILD_THINGS_FOR_WEB: 'And I build things for web.',
+	LETS_CREATE_SOMETHING_AWESOME_TOGETHER:
+		"Let's create something awesome together!",
 };
 
 export default messages;

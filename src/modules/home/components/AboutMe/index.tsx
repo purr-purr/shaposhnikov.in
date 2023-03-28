@@ -22,20 +22,20 @@ const AboutMe = () => {
 					<span className={cn(s.userName, getActiveStateClassName(1200))}>
 						{messages.USERNAME}{' '}
 					</span>
-					!
+					!{' '}
 					<span className={cn(s.line, getActiveStateClassName(1450))}>
-						{messages.GLAD_TO_SEE_YOU_HERE}
+						{messages.IM_A_FRONT_END_DEVELOPER}
 					</span>
 				</p>
 
 				<p className={cn(s.line, getActiveStateClassName(1750))}>
-					{messages.MY_NAME_IS_ANTON}
+					{messages.I_HAVE_MORE_THAN_THREE_YEARS}
 				</p>
 				<p className={cn(s.line, getActiveStateClassName(2050))}>
-					{messages.I_AM_CURRENTLY_OPEN_TO_NEW_OPPORTUNITIES}
+					{messages.AND_I_BUILD_THINGS_FOR_WEB}
 				</p>
 				<p className={cn(s.line, getActiveStateClassName(2350))}>
-					{messages.I_WILL_BE_GLAD_TO_COOPERATE}
+					{messages.LETS_CREATE_SOMETHING_AWESOME_TOGETHER}
 				</p>
 			</div>
 		</article>
