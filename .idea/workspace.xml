@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/common/components/ScrollProgress/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/layout/components/AppContextProvider/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/ScrollToTop/ScrollToTop.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/ScrollToTop/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Star/Star.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/ScrollProgress/ScrollProgress.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Star/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/icons/types/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/const.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/context/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/context/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/messages.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +45,24 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DEVELOPMENT/GitHub/PERSONAL/shaposhnikov.in/src/modules/home/assets/introduce&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DEVELOPMENT/GitHub/PERSONAL/shaposhnikov.in/src/modules/home/assets/projectList&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.codegpt&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\typescript\\lib&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\assets\projectList" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\assets\introduce" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets\favicon" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\components" />
-      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\icons\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\icons\components" />
@@ -92,7 +85,11 @@
       <workItem from="1679844485586" duration="17573000" />
       <workItem from="1679916577825" duration="874000" />
       <workItem from="1679936807103" duration="8269000" />
-      <workItem from="1679992469258" duration="7623000" />
+      <workItem from="1679992469258" duration="8003000" />
+      <workItem from="1680012854711" duration="5014000" />
+      <workItem from="1680081483374" duration="5363000" />
+      <workItem from="1680095283873" duration="4096000" />
+      <workItem from="1680109506460" duration="8917000" />
     </task>
     <servers />
   </component>

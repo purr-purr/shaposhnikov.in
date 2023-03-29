@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import Link from 'next/link';
 
 import ArrowDefault from '@modules/icons/components/ArrowDefault';
@@ -10,31 +10,28 @@ import s from './ProjectListItem.module.scss';
 
 const ProjectListItem: FC<{
 	title: string;
-	poster: string;
 	year: number;
-	stack: string;
+	use: string;
 	link: string;
-	onMouseOver?: (e: any) => void;
-}> = ({ title, poster, year, stack, link, onMouseOver }) => {
+	onMouseEvent: (e: any) => void;
+	isDisabledState: boolean;
+}> = ({ title, year, use, link, onMouseEvent, isDisabledState = true }) => {
 	const projectYear = year.toString();
-	const [isDisable, setIsDisable] = useState(true);
+
 	return (
 		<li
-			className={cn(s.container, isDisable && s.disabled)}
-			onMouseOver={onMouseOver}
-			onMouseEnter={() => setIsDisable(false)}
-			onMouseLeave={() => setIsDisable(true)}
+			className={cn(s.container, isDisabledState && s.disabled)}
+			onMouseEnter={onMouseEvent}
+			onMouseLeave={onMouseEvent}
 		>
-			<Link className={s.title} href={link} target="_blank">
-				<abbr title="go to website">{title}</abbr>
-			</Link>
+			<h4 className={s.title}>{title}</h4>
 
 			<p
-				className={cn(s.stack, isDisable && s.disabled)}
-			>{`${stack} ${messages.WAS_USED}`}</p>
+				className={cn(s.use, isDisabledState && s.disabled)}
+			>{`${use} ${messages.WAS_USED}`}</p>
 
 			<Link
-				className={cn(s.live, isDisable && s.disabled)}
+				className={cn(s.live, isDisabledState && s.disabled)}
 				href={link}
 				target="_blank"
 			>

@@ -32,6 +32,7 @@
   text-transform: uppercase;
   width: fit-content;
   margin-right: auto;
+  pointer-events: none;
 }
 
 .live {
@@ -58,7 +59,7 @@
   }
 }
 
-.live, .stack {
+.live, .use {
   opacity: 1;
   transition: opacity .3s ease-in-out;
 

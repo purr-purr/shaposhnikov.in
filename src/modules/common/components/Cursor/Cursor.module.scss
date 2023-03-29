@@ -1,10 +1,17 @@
-.cursor, .aura {
+.cursor, .aura, .poster {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
   pointer-events: none;
-  border-radius: 50%;
+}
+
+.poster {
+  width: 450px;
+  height: 230px;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: transform 0.3s linear;
 }
 
 .cursor {
@@ -13,6 +20,7 @@
   margin-left: -4px;
   margin-top: -4px;
   background-color: $dark;
+  border-radius: 50%;
   transition: transform 0.1s linear;
 }
 
@@ -23,5 +31,6 @@
   mix-blend-mode: difference;
   margin-left: -23px;
   margin-top: -23px;
+  border-radius: 50%;
   transition: transform 0.4s linear;
 }
