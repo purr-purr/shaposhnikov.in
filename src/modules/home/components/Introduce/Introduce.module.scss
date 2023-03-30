@@ -60,7 +60,21 @@
   h1 {
     text-transform: uppercase;
     width: fit-content;
-    position: relative;
+    //position: relative;
     font-size: 80px;
+  }
+}
+
+.dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: $red;
+  border-radius: 50%;
+  transition: opacity .2s linear;
+  
+  &.hidden {
+    opacity: 0;
+    transition: opacity .2s linear;
   }
 }

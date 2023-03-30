@@ -2,6 +2,7 @@ import { CSSProperties, FC, useContext, useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import AppContext from '@modules/layout/context';
+import cn from 'classnames';
 
 import { ICursorPosition } from '@modules/common/types';
 
@@ -29,7 +30,9 @@ const Cursor: FC = () => {
 	}, []);
 
 	useEffect(() => {
-		projectCursor !== 'default' && setCursorPosterPath(projectCursor);
+		if (projectCursor !== 'default' && projectCursor !== 'large-dot') {
+			setCursorPosterPath(projectCursor);
+		}
 	}, [projectCursor]);
 
 	const getPosterPath = (path: string) => {
@@ -44,8 +47,12 @@ const Cursor: FC = () => {
 
 	return !isNavigationMode ? (
 		<>
-			<span style={cursorStyle} className={s.cursor} />
-			{projectCursor !== 'default' ? (
+			<span
+				style={cursorStyle}
+				className={cn(s.cursor, projectCursor === 'large-dot' && s.largeDot)}
+			/>
+
+			{projectCursor !== 'default' && projectCursor !== 'large-dot' ? (
 				<Image
 					src={getPosterPath(cursorPosterPath)}
 					style={cursorStyle}
@@ -53,7 +60,11 @@ const Cursor: FC = () => {
 					className={s.poster}
 				/>
 			) : (
-				<span style={cursorStyle} className={s.aura} />
+				<>
+					{projectCursor !== 'large-dot' && (
+						<span style={cursorStyle} className={s.aura} />
+					)}
+				</>
 			)}
 		</>
 	) : null;

@@ -22,6 +22,16 @@
   background-color: $dark;
   border-radius: 50%;
   transition: transform 0.1s linear;
+
+  &.largeDot {
+    width: 320px;
+    height: 320px;
+    margin-left: -160px;
+    margin-top: -160px;
+    background-color: $red;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
 }
 
 .aura {

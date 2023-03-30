@@ -6,7 +6,8 @@ import AppContext from '@modules/layout/context';
 import s from './ScrollProgress.module.scss';
 
 const ScrollProgress: FC = () => {
-	const { scrollPosition, handleScrollPosition } = useContext(AppContext);
+	const { scrollPosition, handleScrollPosition, handleProjectCursor } =
+		useContext(AppContext);
 	const [scrolledPercent, setScrolledPercent] = useState(0);
 
 	const mainBlock =
