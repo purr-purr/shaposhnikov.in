@@ -5,13 +5,18 @@ import cn from 'classnames';
 
 import s from './TextLink.module.scss';
 
-const TextLink: FC<{ href: string; title: string; className: string }> = ({
+const TextLink: FC<{ href: string; title: string; className?: string }> = ({
 	href,
 	title,
 	className,
 }) => {
 	return (
-		<Link href={href} className={cn(s.container, className && className)}>
+		<Link
+			data-cursor="button"
+			target="_blank"
+			href={href}
+			className={cn(s.container, className && className)}
+		>
 			{title}
 		</Link>
 	);

@@ -8,25 +8,19 @@ import { PROJECTS_LIST } from '@utils/data';
 import s from './ProjectList.module.scss';
 
 const ProjectList = () => {
-	const { projectCursor, handleProjectCursor } = useContext(AppContext);
+	const { cursorState } = useContext(AppContext);
 	const [linePosition, setLinePosition] = useState(0);
 
-	const handleOnMouseOver = (event: any, poster: string) => {
+	const handleOnMouseOver = (event: any) => {
 		event.preventDefault();
 
 		if (event.target === event.currentTarget) {
 			setLinePosition(event.target.offsetTop);
-			projectCursor !== poster && handleProjectCursor(poster);
 		}
 	};
 
-	const handleMouseLeave = () => {
-		handleProjectCursor('default');
-		setLinePosition(0);
-	};
-
 	return (
-		<ul className={s.container} onMouseLeave={handleMouseLeave}>
+		<ul className={s.container} onMouseLeave={() => setLinePosition(0)}>
 			<li className={s.line} style={{ top: `${linePosition}px` }} />
 			{PROJECTS_LIST.map((item) => (
 				<ProjectListItem
@@ -35,8 +29,9 @@ const ProjectList = () => {
 					year={item.year}
 					link={item.link}
 					use={item.use}
-					isDisabledState={projectCursor !== item.poster}
-					onMouseEvent={(e) => handleOnMouseOver(e, item.poster)}
+					poster={item.poster}
+					isDisabledState={cursorState !== item.poster}
+					onMouseEvent={handleOnMouseOver}
 				/>
 			))}
 		</ul>

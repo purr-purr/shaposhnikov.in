@@ -1,7 +1,7 @@
 .container {
   @include flex-align(flex-start);
   gap: 63px;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 
 .info {
@@ -16,4 +16,8 @@
 .list {
   padding-left: 20px;
   margin-bottom: 20px;
+}
+
+.link {
+  color: $red;
 }

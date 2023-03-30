@@ -3,19 +3,19 @@ import { createContext } from 'react';
 type AppContextType = {
 	isNavigationMode: boolean;
 	scrollPosition: number;
-	projectCursor: string;
+	cursorState: string;
 	handleNavigationMode: (isNavigationMode: boolean) => void;
 	handleScrollPosition: (scrollPosition: number) => void;
-	handleProjectCursor: (cursorContent: string) => void;
+	handleCursorState: (cursorState: string) => void;
 };
 
 const AppContext = createContext<AppContextType>({
 	isNavigationMode: false,
 	scrollPosition: 0,
-	projectCursor: 'default',
+	cursorState: 'default',
 	handleNavigationMode: () => {},
 	handleScrollPosition: () => {},
-	handleProjectCursor: () => {},
+	handleCursorState: () => {},
 });
 
 export default AppContext;

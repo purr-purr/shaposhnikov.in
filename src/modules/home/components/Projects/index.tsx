@@ -10,10 +10,8 @@ const Projects = () => {
 		<article className={s.container} id={messages.PROJECTS}>
 			<div className={s.inner}>
 				<Heading text={messages.PROJECTS} />
-
 				<p>{messages.A_FEW_OF_MY_LATEST_PROJECTS}</p>
 			</div>
-
 			<ProjectList />
 		</article>
 	);

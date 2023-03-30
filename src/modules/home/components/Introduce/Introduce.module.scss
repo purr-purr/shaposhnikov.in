@@ -34,34 +34,23 @@
 
 .intro {
   height: 100%;
-
-  &-inner {
-    position: sticky;
-    top: calc((100% - 166px) / 2);
-    z-index: 99;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-  }
 }
 
 .heading {
-  z-index: 5;
+  position: sticky;
+  top: calc((100% - 166px) / 2);
+  z-index: 99;
   margin-left: 120px;
-  opacity: 1;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 80px;
   transform: translateX(0);
-  transition: all 0.5s linear;
+  transition: transform 0.5s linear, opacity 0.5s linear;
 
   &.hidden {
     opacity: 0;
     transform: translateX(-100%);
-  }
-
-  h1 {
-    text-transform: uppercase;
-    width: fit-content;
-    //position: relative;
-    font-size: 80px;
+    transition: transform 0.5s linear, opacity 0.5s linear;
   }
 }
 
@@ -72,7 +61,7 @@
   background-color: $red;
   border-radius: 50%;
   transition: opacity .2s linear;
-  
+
   &.hidden {
     opacity: 0;
     transition: opacity .2s linear;

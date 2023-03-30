@@ -4,22 +4,37 @@ import Image from 'next/image';
 import AppContext from '@modules/layout/context';
 import cn from 'classnames';
 
+import messages from '@utils/messages';
+
 import { ICursorPosition } from '@modules/common/types';
 
 import s from './Cursor.module.scss';
 
 const Cursor: FC = () => {
-	const { isNavigationMode, projectCursor } = useContext(AppContext);
+	const { isNavigationMode, cursorState, handleCursorState } =
+		useContext(AppContext);
 
-	const [cursorPosterPath, setCursorPosterPath] = useState('default');
 	const [cursorPosition, setCursorPosition] = useState<ICursorPosition>({
 		x: 0,
 		y: 0,
 	});
 
+	const [currentHoveredEl, setCurrentHoveredEl] = useState<string>('default');
+
 	useEffect(() => {
 		const handleMouseMove = (event: MouseEvent) => {
-			setCursorPosition({ x: event.clientX, y: event.clientY });
+			const x = event.clientX;
+			const y = event.clientY;
+
+			setCursorPosition({ x: x, y: y });
+
+			let hoveredElement = document
+				.elementFromPoint(x, y)
+				?.getAttribute('data-cursor');
+
+			if (hoveredElement !== currentHoveredEl) {
+				setCurrentHoveredEl(hoveredElement || 'default');
+			}
 		};
 
 		window.addEventListener('mousemove', handleMouseMove);
@@ -30,44 +45,49 @@ const Cursor: FC = () => {
 	}, []);
 
 	useEffect(() => {
-		if (projectCursor !== 'default' && projectCursor !== 'large-dot') {
-			setCursorPosterPath(projectCursor);
-		}
-	}, [projectCursor]);
+		console.log(currentHoveredEl);
+		currentHoveredEl !== cursorState && handleCursorState(currentHoveredEl);
+	}, [currentHoveredEl]);
 
 	const getPosterPath = (path: string) => {
-		if (path) {
-			return require(`src/modules/home/assets/projectList/projectList_${path}.jpg`);
-		}
+		return (
+			path &&
+			require(`src/modules/home/assets/projectList/projectList_${path}.jpg`)
+		);
 	};
 
 	const cursorStyle: CSSProperties = {
 		transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
 	};
 
-	return !isNavigationMode ? (
+	return isNavigationMode ? null : (
 		<>
 			<span
 				style={cursorStyle}
-				className={cn(s.cursor, projectCursor === 'large-dot' && s.largeDot)}
+				className={cn(s.cursor, currentHoveredEl === 'circle' && s.circle)}
 			/>
 
-			{projectCursor !== 'default' && projectCursor !== 'large-dot' ? (
-				<Image
-					src={getPosterPath(cursorPosterPath)}
-					style={cursorStyle}
-					alt=""
-					className={s.poster}
-				/>
-			) : (
+			{currentHoveredEl === 'default' ||
+			currentHoveredEl === 'button' ||
+			currentHoveredEl === 'circle' ? (
 				<>
-					{projectCursor !== 'large-dot' && (
-						<span style={cursorStyle} className={s.aura} />
+					{currentHoveredEl !== 'circle' && (
+						<span
+							style={cursorStyle}
+							className={cn(s.aura, currentHoveredEl === 'button' && s.button)}
+						/>
 					)}
 				</>
+			) : (
+				<Image
+					src={getPosterPath(currentHoveredEl)}
+					style={cursorStyle}
+					alt={messages.POSTER}
+					className={s.poster}
+				/>
 			)}
 		</>
-	) : null;
+	);
 };
 
 export default Cursor;

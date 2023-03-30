@@ -7,7 +7,7 @@ import { ILayoutProps } from '@modules/layout/types';
 const AppContextProvider: FC<ILayoutProps> = ({ children }) => {
 	const [isNavigationMode, setIsNavigationMode] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
-	const [projectCursor, setProjectCursor] = useState('default');
+	const [cursorState, setProjectCursor] = useState('default');
 
 	const handleNavigationMode = useCallback((value: boolean) => {
 		setIsNavigationMode(value);
@@ -17,17 +17,17 @@ const AppContextProvider: FC<ILayoutProps> = ({ children }) => {
 		setScrollPosition(value);
 	}, []);
 
-	const handleProjectCursor = useCallback((value: string) => {
+	const handleCursorState = useCallback((value: string) => {
 		setProjectCursor(value);
 	}, []);
 
 	const context = {
 		isNavigationMode,
 		scrollPosition,
-		projectCursor,
+		cursorState,
 		handleNavigationMode,
 		handleScrollPosition,
-		handleProjectCursor,
+		handleCursorState,
 	};
 
 	return <AppContext.Provider value={context}>{children}</AppContext.Provider>;

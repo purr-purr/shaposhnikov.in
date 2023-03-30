@@ -68,3 +68,7 @@
     transition: opacity .3s ease-in-out;
   }
 }
+
+.year, .use, .live-icon {
+  pointer-events: none;
+}

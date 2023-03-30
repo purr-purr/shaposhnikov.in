@@ -13,6 +13,7 @@ const NavigationButton = ({ ...props }) => {
 	return (
 		<button
 			{...props}
+			data-cursor="button"
 			className={cn(s.container, scrollPosition > 500 && s[`container--short`])}
 		>
 			{messages.MENU}

@@ -1,8 +1,10 @@
 import { Fragment } from 'react';
 
 import Heading from '@modules/common/components/Heading';
+import TextLink from '@modules/common/components/TextLink';
 import cn from 'classnames';
 
+import { APP_AUTHOR_CV } from '@utils/const';
 import { EXPERIENCE_LIST } from '@utils/data';
 import messages from '@utils/messages';
 
@@ -28,6 +30,15 @@ const Experience = () => {
 							))}
 						</ul>
 						<p>{item.description}</p>
+						<p>
+							{messages.IF_YOU_LIKE_TO_LEARN_MORE_ABOUT_MY_WORK_EXPERIENCE}{' '}
+							<TextLink
+								href={APP_AUTHOR_CV}
+								className={s.link}
+								title={messages.LINK}
+							/>{' '}
+							{messages.TO_VIEW_MY_CV}
+						</p>
 					</Fragment>
 				))}
 			</div>

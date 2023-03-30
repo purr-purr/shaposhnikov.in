@@ -8,7 +8,7 @@ import messages from '@utils/messages';
 import s from './AboutMe.module.scss';
 
 const AboutMe = () => {
-	const { scrollPosition, handleProjectCursor } = useContext(AppContext);
+	const { scrollPosition } = useContext(AppContext);
 
 	const getActiveStateClassName = (point: number) => {
 		return scrollPosition > point && s.active;

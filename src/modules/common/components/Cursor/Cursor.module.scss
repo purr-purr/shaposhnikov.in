@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 98;
   pointer-events: none;
 }
 
@@ -21,16 +21,16 @@
   margin-top: -4px;
   background-color: $dark;
   border-radius: 50%;
-  transition: transform 0.1s linear;
+  transition: all 0.3s linear, transform 0.1s linear;
 
-  &.largeDot {
+  &.circle {
     width: 320px;
     height: 320px;
     margin-left: -160px;
     margin-top: -160px;
     background-color: $red;
     z-index: 1;
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
   }
 }
 
@@ -42,5 +42,13 @@
   margin-left: -23px;
   margin-top: -23px;
   border-radius: 50%;
-  transition: transform 0.4s linear;
+  transition: all 0.4s linear;
+
+  &.button {
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    transition: all 0.4s linear;
+  }
 }

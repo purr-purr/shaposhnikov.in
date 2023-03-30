@@ -13,9 +13,18 @@ const ProjectListItem: FC<{
 	year: number;
 	use: string;
 	link: string;
-	onMouseEvent: (e: any) => void;
+	onMouseEvent: (event: any) => void;
 	isDisabledState: boolean;
-}> = ({ title, year, use, link, onMouseEvent, isDisabledState = true }) => {
+	poster: string;
+}> = ({
+	title,
+	year,
+	use,
+	link,
+	onMouseEvent,
+	isDisabledState = true,
+	poster,
+}) => {
 	const projectYear = year.toString();
 
 	return (
@@ -23,6 +32,7 @@ const ProjectListItem: FC<{
 			className={cn(s.container, isDisabledState && s.disabled)}
 			onMouseEnter={onMouseEvent}
 			onMouseLeave={onMouseEvent}
+			data-cursor={poster}
 		>
 			<h4 className={s.title}>{title}</h4>
 
@@ -31,9 +41,10 @@ const ProjectListItem: FC<{
 			>{`${use} ${messages.WAS_USED}`}</p>
 
 			<Link
-				className={cn(s.live, isDisabledState && s.disabled)}
 				href={link}
 				target="_blank"
+				data-cursor={poster}
+				className={cn(s.live, isDisabledState && s.disabled)}
 			>
 				{messages.LIVE}
 				<span className={s[`live-icon`]}>
@@ -41,7 +52,9 @@ const ProjectListItem: FC<{
 				</span>
 			</Link>
 
-			<time dateTime={projectYear}>{projectYear}</time>
+			<time className={s.year} dateTime={projectYear}>
+				{projectYear}
+			</time>
 		</li>
 	);
 };

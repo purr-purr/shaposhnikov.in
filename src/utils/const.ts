@@ -1,5 +1,7 @@
 export const APP_LINK = 'https://shaposhnikov.in/';
 export const APP_AUTHOR = 'Shaposhnikov Anton ';
+export const APP_AUTHOR_CV =
+	'https://drive.google.com/file/d/1_X0WFqP8EUNvBxd4JYCTVO0KJ5kYB1Z_/view?usp=share_link';
 export const APP_AUTHOR_EMAIL = 'shaposhnikov.web@gmail.com';
 export const APP_TITLE = 'Web-Developer Portfolio';
 export const APP_META_TITLE = APP_AUTHOR + ' 🤟 | ' + APP_TITLE;
