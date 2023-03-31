@@ -1,6 +1,11 @@
 .container {
   height: 600px;
   margin-bottom: 200px;
+
+  @include media-mobile {
+    height: auto;
+    margin-bottom: 90px;
+  }
 }
 
 .inner {
@@ -8,6 +13,13 @@
   gap: 63px;
   position: sticky;
   top: 400px;
+
+  @include media-mobile {
+    flex-direction: column;
+    align-items: baseline;
+    position: unset;
+    gap: 40px;
+  }
 }
 
 .email {

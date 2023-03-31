@@ -8,6 +8,14 @@
   border-bottom: 1px solid $grey;
   mix-blend-mode: difference;
   background-color: $white;
+
+  @include media-laptop {
+    height: 80px;
+  }
+
+  @include media-mobile {
+    height: 40px;
+  }
 }
 
 .offMixBlendMode {

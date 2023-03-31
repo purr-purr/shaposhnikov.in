@@ -15,10 +15,23 @@
   font-weight: 800;
   font-size: 80px;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px $dark;
-  -webkit-text-fill-color: transparent;
   padding-top: 25px;
   padding-bottom: 25px;
+  -webkit-text-stroke: 2px $dark;
+  -webkit-text-fill-color: transparent;
+
+  @include media-laptop {
+    font-size: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @include media-mobile {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-text-stroke: 1px $dark;
+  }
 
   &:hover {
     -webkit-text-fill-color: $dark;

@@ -15,6 +15,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.1;
+
+  @include media-laptop {
+    font-size: 15px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -84,6 +88,17 @@ button {
     height: 20px;
     background-color: $red;
     border-radius: 20px;
+
+    @include media-laptop {
+      width: 15px;
+      height: 15px;
+    }
+
+    @include media-mobile {
+      width: 10px;
+      height: 10px;
+      top: 2px;
+    }
   }
 
   &--xs:before {
@@ -91,5 +106,9 @@ button {
     left: -15px;
     width: 7px;
     height: 7px;
+
+    @include media-mobile {
+      top: 6px;
+    }
   }
 }

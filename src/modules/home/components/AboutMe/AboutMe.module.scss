@@ -2,6 +2,11 @@
   height: calc(100vh + 1100px);
   position: relative;
   margin-bottom: 600px;
+
+  @include media-mobile {
+    height: auto;
+    margin-bottom: 200px;
+  }
 }
 
 .inner {
@@ -16,9 +21,24 @@
   transform: translateY(200%);
   transition: all 0.5s ease-in-out;
 
+  @include media-mobile {
+    position: unset;
+    max-width: 400px;
+    transform: translateY(0);
+  }
+
   p {
+    display: block;
     font-size: 35px;
     line-height: 1.4;
+
+    @include media-laptop {
+      font-size: 26px;
+    }
+
+    @include media-mobile {
+      font-size: 15px;
+    }
   }
 }
 
@@ -40,6 +60,13 @@
     padding-bottom: 5px;
     animation: typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
+
+    @include media-mobile {
+      border-right-width: 1px;
+      padding-left: 4px;
+      padding-right: 2px;
+      padding-bottom: 1px;
+    }
   }
 }
 
@@ -55,6 +82,18 @@
     height: 20px;
     background-color: $red;
     border-radius: 50%;
+
+    @include media-laptop {
+      left: -25px;
+      width: 15px;
+      height: 15px;
+    }
+
+    @include media-mobile {
+      left: -15px;
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 

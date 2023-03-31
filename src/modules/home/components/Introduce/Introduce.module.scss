@@ -1,6 +1,10 @@
 .container {
   height: calc(100vh + 400px);
   width: 100%;
+
+  @include media-mobile {
+    height: 550px;
+  }
 }
 
 .background {
@@ -11,6 +15,16 @@
   height: calc(100% - 120px);
   width: 100%;
 
+  @include media-laptop {
+    top: 80px;
+    height: calc(100% - 80px);
+  }
+
+  @include media-mobile {
+    top: 40px;
+    height: calc(100% - 40px);
+  }
+
   &-item {
     position: sticky;
     top: calc((100% - 500px) / 2);
@@ -18,6 +32,14 @@
     opacity: 1;
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
+
+    @include media-laptop {
+      top: calc((100% - 400px) / 2);
+    }
+
+    @include media-mobile {
+      top: 112px;
+    }
   }
 
   &-item.hidden {
@@ -47,6 +69,17 @@
   transform: translateX(0);
   transition: transform 0.5s linear, opacity 0.5s linear;
 
+  @include media-laptop {
+    top: calc((100% - 100px) / 2);
+    font-size: 60px;
+  }
+
+  @include media-mobile {
+    font-size: 30px;
+    top: 191px;
+    margin-left: 0;
+  }
+
   &.hidden {
     opacity: 0;
     transform: translateX(-100%);
@@ -61,6 +94,16 @@
   background-color: $red;
   border-radius: 50%;
   transition: opacity .2s linear;
+
+  @include media-laptop {
+    width: 15px;
+    height: 15px;
+  }
+
+  @include media-mobile {
+    width: 10px;
+    height: 10px;
+  }
 
   &.hidden {
     opacity: 0;

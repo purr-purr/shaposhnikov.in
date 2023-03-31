@@ -45,7 +45,6 @@ const Cursor: FC = () => {
 	}, []);
 
 	useEffect(() => {
-		console.log(currentHoveredEl);
 		currentHoveredEl !== cursorState && handleCursorState(currentHoveredEl);
 	}, [currentHoveredEl]);
 

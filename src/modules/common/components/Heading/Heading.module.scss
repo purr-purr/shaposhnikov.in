@@ -8,6 +8,20 @@
   width: max-content;
   color: $dark;
 
+  @include media-laptop {
+    position: relative;
+    top: 0;
+    font-size: 60px;
+    min-width: 408px;
+    padding-bottom: 75px;
+  }
+
+  @include media-mobile {
+    font-size: 30px;
+    min-width: 205px;
+    padding-bottom: 40px;
+  }
+
   &:before, &:after {
     content: attr(data-text);
     position: absolute;
@@ -18,9 +32,25 @@
 
   &:before {
     top: 50px;
+
+    @include media-laptop {
+      top: 40px;
+    }
+
+    @include media-mobile {
+      top: 20px;
+    }
   }
 
   &:after {
     top: 100px;
+
+    @include media-laptop {
+      top: 80px;
+    }
+
+    @include media-mobile {
+      top: 40px;
+    }
   }
 }

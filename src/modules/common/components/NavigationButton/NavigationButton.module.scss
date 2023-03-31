@@ -6,6 +6,11 @@
   font-size: 20px;
   position: relative;
 
+  @include media-laptop {
+    font-size: 15px;
+    width: 116px;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -15,9 +20,17 @@
     height: 100vh;
     background-color: $dark;
     transition: all 0.5s ease-in-out;
+
+    @include media-mobile {
+      display: none;
+    }
   }
 
   &--short:before {
     height: 120px;
+
+    @include media-laptop {
+      height: 80px;
+    }
   }
 }

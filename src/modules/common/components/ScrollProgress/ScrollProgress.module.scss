@@ -6,8 +6,22 @@
   width: 100px;
   height: 100px;
   mix-blend-mode: exclusion;
-  transition: transform .2s linear;
   cursor: pointer;
+  transition: transform .2s linear;
+
+  @include media-laptop {
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  @include media-mobile {
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+  }
 
   &:before {
     content: attr(data-text);
@@ -19,6 +33,10 @@
     min-width: 23px;
     text-align: center;
     z-index: 1;
+
+    @include media-mobile {
+      font-size: 9px;
+    }
   }
 
   path {

@@ -3,15 +3,23 @@ import { useContext } from 'react';
 import AppContext from '@modules/layout/context';
 import cn from 'classnames';
 
+import { useMediaQuery } from '@modules/common/hooks';
+
+import { MOBILE_BREAKPOINT } from '@utils/const';
 import messages from '@utils/messages';
 
 import s from './AboutMe.module.scss';
 
 const AboutMe = () => {
 	const { scrollPosition } = useContext(AppContext);
+	const isMobile = useMediaQuery(MOBILE_BREAKPOINT);
 
 	const getActiveStateClassName = (point: number) => {
-		return scrollPosition > point && s.active;
+		if (isMobile) {
+			return s.active;
+		} else {
+			return scrollPosition > point && s.active;
+		}
 	};
 
 	return (
