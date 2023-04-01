@@ -4,6 +4,9 @@ import Link from 'next/link';
 import ArrowDefault from '@modules/icons/components/ArrowDefault';
 import cn from 'classnames';
 
+import { useMediaQuery } from '@modules/common/hooks';
+
+import { MOBILE_BREAKPOINT } from '@utils/const';
 import messages from '@utils/messages';
 
 import s from './ProjectListItem.module.scss';
@@ -26,6 +29,7 @@ const ProjectListItem: FC<{
 	poster,
 }) => {
 	const projectYear = year.toString();
+	const isMobile = useMediaQuery(MOBILE_BREAKPOINT);
 
 	return (
 		<li
@@ -36,9 +40,11 @@ const ProjectListItem: FC<{
 		>
 			<h4 className={s.title}>{title}</h4>
 
-			<p
-				className={cn(s.use, isDisabledState && s.disabled)}
-			>{`${use} ${messages.WAS_USED}`}</p>
+			{!isMobile && (
+				<p
+					className={cn(s.use, isDisabledState && s.disabled)}
+				>{`${use} ${messages.WAS_USED}`}</p>
+			)}
 
 			<Link
 				href={link}

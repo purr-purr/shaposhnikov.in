@@ -4,6 +4,9 @@ import Image from 'next/image';
 import AppContext from '@modules/layout/context';
 import cn from 'classnames';
 
+import { useMediaQuery } from '@modules/common/hooks';
+
+import { MOBILE_BREAKPOINT } from '@utils/const';
 import messages from '@utils/messages';
 
 import { ICursorPosition } from '@modules/common/types';
@@ -13,6 +16,8 @@ import s from './Cursor.module.scss';
 const Cursor: FC = () => {
 	const { isNavigationMode, cursorState, handleCursorState } =
 		useContext(AppContext);
+
+	const isMobile = useMediaQuery(MOBILE_BREAKPOINT);
 
 	const [cursorPosition, setCursorPosition] = useState<ICursorPosition>({
 		x: 0,
@@ -56,12 +61,13 @@ const Cursor: FC = () => {
 	};
 
 	const cursorStyle: CSSProperties = {
-		transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
+		transform: `translate3d(${cursorPosition.x}px, ${cursorPosition.y}px), 0`,
+		WebkitTransform: `translate3d(${cursorPosition.x}px, ${cursorPosition.y}px, 0)`,
 	};
 
-	return isNavigationMode ? null : (
+	return isNavigationMode || isMobile ? null : (
 		<>
-			<span
+			<div
 				style={cursorStyle}
 				className={cn(s.cursor, currentHoveredEl === 'circle' && s.circle)}
 			/>
@@ -71,7 +77,7 @@ const Cursor: FC = () => {
 			currentHoveredEl === 'circle' ? (
 				<>
 					{currentHoveredEl !== 'circle' && (
-						<span
+						<div
 							style={cursorStyle}
 							className={cn(s.aura, currentHoveredEl === 'button' && s.button)}
 						/>

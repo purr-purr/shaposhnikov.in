@@ -26,19 +26,24 @@
   }
 
   &-item {
-    position: sticky;
-    top: calc((100% - 500px) / 2);
+    position: absolute;
+    top: 0;
     width: 100%;
-    opacity: 1;
+    padding-top: 25px;
+    background: url("../../assets/introduce/web-dev.svg") no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 130px;
     transform: translateX(0);
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     @include media-laptop {
-      top: calc((100% - 400px) / 2);
+      background-position-y: 80px;
     }
 
     @include media-mobile {
-      top: 112px;
+      background-position-y: 60px;
     }
   }
 
@@ -48,19 +53,13 @@
   }
 
   img {
-    display: block;
     width: 100%;
-    height: auto;
   }
 }
 
-.intro {
-  height: 100%;
-}
-
 .heading {
-  position: sticky;
-  top: calc((100% - 166px) / 2);
+  position: absolute;
+  top: 430px;
   z-index: 99;
   margin-left: 120px;
   text-transform: uppercase;
@@ -70,13 +69,13 @@
   transition: transform 0.5s linear, opacity 0.5s linear;
 
   @include media-laptop {
-    top: calc((100% - 100px) / 2);
+    top: 270px;
     font-size: 60px;
   }
 
   @include media-mobile {
     font-size: 30px;
-    top: 191px;
+    top: 140px;
     margin-left: 0;
   }
 

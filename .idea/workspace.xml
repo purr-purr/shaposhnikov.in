@@ -3,23 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navigation/Navigation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navigation/Navigation.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/NavigationButton/NavigationButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/NavigationButton/NavigationButton.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/ScrollProgress/ScrollProgress.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/ScrollProgress/ScrollProgress.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/home/components/Introduce/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Introduce/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Footer/Footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +77,8 @@
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src" />
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\icons\components" />
     </key>
   </component>
@@ -100,7 +106,10 @@
       <workItem from="1680109506460" duration="8917000" />
       <workItem from="1680170520324" duration="25416000" />
       <workItem from="1680213438380" duration="592000" />
-      <workItem from="1680280868562" duration="9858000" />
+      <workItem from="1680280868562" duration="9985000" />
+      <workItem from="1680344010284" duration="2718000" />
+      <workItem from="1680349332491" duration="6208000" />
+      <workItem from="1680356002068" duration="19019000" />
     </task>
     <servers />
   </component>

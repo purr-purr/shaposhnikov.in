@@ -3,6 +3,11 @@
   overflow-y: scroll;
   color: $dark;
   cursor: none;
+  isolation: isolate;
+ 
+  @include media-mobile {
+    cursor: auto;
+  }
 }
 
 .inner {

@@ -10,16 +10,19 @@
 }
 
 .inner {
-  position: sticky;
+  position: absolute;
   top: calc((100% - 154px) / 2);
-  margin-left: auto;
-  margin-right: auto;
+  left: calc((100% - 905px) / 2);
   max-width: 905px;
   width: 100%;
   height: fit-content;
   opacity: 0;
   transform: translateY(200%);
   transition: all 0.5s ease-in-out;
+
+  @include media-laptop {
+    left: calc((100% - 680px) / 2);
+  }
 
   @include media-mobile {
     position: unset;

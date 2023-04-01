@@ -15,6 +15,7 @@ export default function Document() {
 	const manifestPath = '/assets/manifest.webmanifest';
 	const FAVICON = '/assets/favicon.ico';
 	const LOGO = '/assets/logo.png';
+
 	return (
 		<Html lang="en">
 			<Head>

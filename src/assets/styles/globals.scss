@@ -15,6 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.1;
+  position: relative;
 
   @include media-laptop {
     font-size: 15px;
@@ -53,7 +54,6 @@ button {
 
 ::selection {
   background-color: $dark;
-  mix-blend-mode: difference;
   color: $red;
 }
 

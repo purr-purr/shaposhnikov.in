@@ -5,6 +5,7 @@
   margin-left: auto;
   font-size: 20px;
   position: relative;
+  color: $dark;
 
   @include media-laptop {
     font-size: 15px;

@@ -26,22 +26,20 @@ const AboutMe = () => {
 		<article className={s.container}>
 			<div className={cn(s.inner, getActiveStateClassName(500))}>
 				<p className={s.firstLine}>
-					<span className={cn('hov', getActiveStateClassName(800))}>
-						{messages.HELLO}{' '}
-					</span>
+					<span className={cn(getActiveStateClassName(800))}>{messages.HELLO} </span>
 					<span className={cn(s.userName, getActiveStateClassName(1200))}>
 						{messages.USERNAME}{' '}
 					</span>
 					!{' '}
-					<span className={cn(s.line, getActiveStateClassName(1450))}>
+					<span className={cn(s.line, getActiveStateClassName(1500))}>
 						{messages.IM_A_FRONT_END_DEVELOPER}
 					</span>
 				</p>
 
-				<p className={cn(s.line, getActiveStateClassName(1750))}>
+				<p className={cn(s.line, getActiveStateClassName(1800))}>
 					{messages.I_HAVE_MORE_THAN_THREE_YEARS}
 				</p>
-				<p className={cn(s.line, getActiveStateClassName(2050))}>
+				<p className={cn(s.line, getActiveStateClassName(2100))}>
 					{messages.AND_I_BUILD_THINGS_FOR_WEB}
 				</p>
 				<p className={cn(s.line, getActiveStateClassName(2350))}>
