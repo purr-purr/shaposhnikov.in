@@ -3,28 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Navigation/Navigation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Navigation/Navigation.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/NavigationButton/NavigationButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/NavigationButton/NavigationButton.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/ScrollProgress/ScrollProgress.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/ScrollProgress/ScrollProgress.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/AboutMe/AboutMe.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/const.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/messages.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +92,8 @@
       <workItem from="1680349332491" duration="6208000" />
       <workItem from="1680356002068" duration="19019000" />
       <workItem from="1680377597324" duration="593000" />
-      <workItem from="1680452033296" duration="9961000" />
+      <workItem from="1680452033296" duration="10199000" />
+      <workItem from="1680464759901" duration="311000" />
     </task>
     <servers />
   </component>

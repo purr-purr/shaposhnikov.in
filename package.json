@@ -22,19 +22,12 @@
     "react": "18.2.0",
     "react-content-loader": "^6.2.0",
     "react-dom": "18.2.0",
-    "react-use-scroll-direction": "^0.1.0",
     "sass": "^1.57.1",
     "typescript": "4.9.4"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@types/node": "18.11.18",
-    "autoprefixer": "^10.4.14",
-    "css-loader": "^6.7.3",
-    "file-loader": "^6.2.0",
-    "postcss-loader": "^7.1.0",
-    "sass-loader": "^13.2.2",
-    "style-loader": "^3.3.2",
     "url-loader": "^4.1.1"
   }
 }
