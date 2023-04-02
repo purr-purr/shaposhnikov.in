@@ -16,7 +16,7 @@
     padding-bottom: 75px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     font-size: 30px;
     min-width: 205px;
     padding-bottom: 40px;
@@ -37,7 +37,7 @@
       top: 40px;
     }
 
-    @include media-mobile {
+    @include media-tablet {
       top: 20px;
     }
   }
@@ -49,7 +49,7 @@
       top: 80px;
     }
 
-    @include media-mobile {
+    @include media-tablet {
       top: 40px;
     }
   }

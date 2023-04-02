@@ -12,7 +12,7 @@
     padding-left: 70px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     flex-wrap: wrap;
     padding-left: 0;
     padding-top: 40px;
@@ -32,7 +32,7 @@
       top: calc((100% - 27px) / 2);
     }
 
-    @include media-mobile {
+    @include media-tablet {
       font-size: 20px;
       top: 10px;
     }
@@ -45,7 +45,7 @@
     opacity: 0.3;
     transition: opacity .3s ease-in-out;
 
-    @include media-mobile {
+    @include media-tablet {
       opacity: 0.8;
     }
   }
@@ -64,7 +64,7 @@
     font-size: 25px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     font-size: 20px;
     width: 100%;
     margin-bottom: 17px;
@@ -76,7 +76,7 @@
   margin-right: 66px;
   margin-left: 66px;
 
-  @include media-mobile {
+  @include media-tablet {
     margin-left: auto;
     color: $light-gray;
   }
@@ -93,7 +93,7 @@
   height: 19px;
   margin-left: 4px;
 
-  @include media-mobile {
+  @include media-tablet {
     width: 16px;
     height: 16px;
   }
@@ -116,7 +116,7 @@
 }
 
 .year {
-  @include media-mobile {
+  @include media-tablet {
     color: $light-gray;
   }
 }

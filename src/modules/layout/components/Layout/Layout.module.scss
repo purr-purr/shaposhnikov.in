@@ -4,8 +4,8 @@
   color: $dark;
   cursor: none;
   isolation: isolate;
- 
-  @include media-mobile {
+
+  @include media-tablet {
     cursor: auto;
   }
 }
@@ -19,7 +19,7 @@
     padding-right: 70px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     padding-left: 20px;
     padding-right: 20px;
   }

@@ -20,7 +20,7 @@ export default function Document() {
 		<Html lang="en">
 			<Head>
 				<link href={FAVICON} rel="icon" />
-				<meta content="#F9F9F9" name="theme-color" />
+				<meta content="#fff" name="theme-color" />
 				<meta content={APP_META_DESC} name="description" />
 				<link href={FAVICON} rel="apple-touch-icon" />
 				<link href={manifestPath} rel="manifest" />

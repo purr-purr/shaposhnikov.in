@@ -13,7 +13,7 @@
     height: 80px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     height: 40px;
     width: calc(100% + 5px);
   }

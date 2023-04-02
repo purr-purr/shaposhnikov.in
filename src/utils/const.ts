@@ -4,7 +4,7 @@ export const APP_AUTHOR_CV =
 	'https://drive.google.com/file/d/1_X0WFqP8EUNvBxd4JYCTVO0KJ5kYB1Z_/view?usp=share_link';
 export const APP_AUTHOR_EMAIL = 'shaposhnikov.web@gmail.com';
 export const APP_TITLE = 'Web-Developer Portfolio';
-export const APP_META_TITLE = APP_AUTHOR + ' 🤟 | ' + APP_TITLE;
+export const APP_META_TITLE = APP_AUTHOR + ' | ' + APP_TITLE;
 export const APP_AUTHOR_SIGNATURE = '=> shaposhnikov.in';
 export const APP_META_DESC =
 	'Discover the skills and projects of a talented Front-End developer through my portfolio website. With a clean and organized structure and optimized content, my website showcases my expertise in web development. Browse through my work and contact me to learn how I can create engaging and visually appealing websites for your business.';

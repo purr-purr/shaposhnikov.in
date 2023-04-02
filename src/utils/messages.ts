@@ -8,6 +8,7 @@ const messages = {
 	CONTACTS: 'contacts',
 	LIVE: 'Live',
 	MENU: 'menu',
+	NAVIGATION: 'Navigation',
 	WAS_USED: 'was used',
 	A_FEW_OF_MY_LATEST_PROJECTS:
 		"A few of my latest projects that i've been" + ' involved in.',

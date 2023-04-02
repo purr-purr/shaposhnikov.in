@@ -38,7 +38,7 @@ export const SKILLS_LIST = [
 	},
 	{
 		title: 'Languages',
-		list: ['English (B1 Intermediate)', 'Ukrainian (Fluent)'],
+		list: ['English (Intermediate)', 'Ukrainian (Fluent)'],
 	},
 ];
 

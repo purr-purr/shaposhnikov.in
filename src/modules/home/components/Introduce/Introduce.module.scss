@@ -2,7 +2,7 @@
   height: calc(100vh + 400px);
   width: 100%;
 
-  @include media-mobile {
+  @include media-tablet {
     height: 550px;
   }
 }
@@ -20,7 +20,7 @@
     height: calc(100% - 80px);
   }
 
-  @include media-mobile {
+  @include media-tablet {
     top: 40px;
     height: calc(100% - 40px);
   }
@@ -42,7 +42,7 @@
       background-position-y: 80px;
     }
 
-    @include media-mobile {
+    @include media-tablet {
       background-position-y: 60px;
     }
   }
@@ -73,10 +73,14 @@
     font-size: 60px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     font-size: 30px;
-    top: 140px;
+    top: 210px;
     margin-left: 0;
+  }
+  
+  @include media-mobile {
+    top: 140px;
   }
 
   &.hidden {
@@ -99,7 +103,7 @@
     height: 15px;
   }
 
-  @include media-mobile {
+  @include media-tablet {
     width: 10px;
     height: 10px;
   }
