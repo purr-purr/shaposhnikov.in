@@ -1,0 +1,42 @@
+.container {
+  @include flex-align(flex-start);
+  gap: 63px;
+  margin-bottom: 400px;
+
+  @include media-laptop {
+    flex-direction: column;
+    margin-bottom: 100px;
+    gap: 40px;
+  }
+}
+
+.info {
+  margin-top: 170px;
+  line-height: 1.5;
+
+  @include media-laptop {
+    margin-top: 0;
+    line-height: 1.3;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include media-tablet {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 15px;
+  }
+}
+
+.link {
+  color: $red;
+}

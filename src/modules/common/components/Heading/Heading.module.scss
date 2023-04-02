@@ -1,0 +1,56 @@
+.container {
+  position: sticky;
+  top: 150px;
+  text-transform: uppercase;
+  font-size: 80px;
+  min-width: 545px;
+  padding-bottom: 83px;
+  width: max-content;
+  color: $dark;
+
+  @include media-laptop {
+    position: relative;
+    top: 0;
+    font-size: 60px;
+    min-width: 408px;
+    padding-bottom: 75px;
+  }
+
+  @include media-tablet {
+    font-size: 30px;
+    min-width: 205px;
+    padding-bottom: 40px;
+  }
+
+  &:before, &:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    -webkit-text-stroke: 1px $dark;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:before {
+    top: 50px;
+
+    @include media-laptop {
+      top: 40px;
+    }
+
+    @include media-tablet {
+      top: 20px;
+    }
+  }
+
+  &:after {
+    top: 100px;
+
+    @include media-laptop {
+      top: 80px;
+    }
+
+    @include media-tablet {
+      top: 40px;
+    }
+  }
+}

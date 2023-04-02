@@ -1,0 +1,115 @@
+.container {
+  height: calc(100vh + 400px);
+  width: 100%;
+
+  @include media-tablet {
+    height: 550px;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  z-index: -1;
+  height: calc(100% - 120px);
+  width: 100%;
+
+  @include media-laptop {
+    top: 80px;
+    height: calc(100% - 80px);
+  }
+
+  @include media-tablet {
+    top: 40px;
+    height: calc(100% - 40px);
+  }
+
+  &-item {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+    background: url("../../assets/introduce/web-dev.svg") no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 130px;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    @include media-laptop {
+      background-position-y: 80px;
+    }
+
+    @include media-tablet {
+      background-position-y: 60px;
+    }
+  }
+
+  &-item.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.heading {
+  position: absolute;
+  top: 430px;
+  z-index: 99;
+  margin-left: 120px;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 80px;
+  transform: translateX(0);
+  transition: transform 0.5s linear, opacity 0.5s linear;
+
+  @include media-laptop {
+    top: 270px;
+    font-size: 60px;
+  }
+
+  @include media-tablet {
+    font-size: 30px;
+    top: 210px;
+    margin-left: 0;
+  }
+  
+  @include media-mobile {
+    top: 140px;
+  }
+
+  &.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s linear, opacity 0.5s linear;
+  }
+}
+
+.dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: $red;
+  border-radius: 50%;
+  transition: opacity .2s linear;
+
+  @include media-laptop {
+    width: 15px;
+    height: 15px;
+  }
+
+  @include media-tablet {
+    width: 10px;
+    height: 10px;
+  }
+
+  &.hidden {
+    opacity: 0;
+    transition: opacity .2s linear;
+  }
+}

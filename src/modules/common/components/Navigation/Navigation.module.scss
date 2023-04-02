@@ -1,0 +1,38 @@
+.container {
+  @include flex-align(center);
+  width: calc(100% + 5px);
+  height: 100vh;
+  background-color: $red;
+  padding-left: 17%;
+  cursor: url('../../assets/navigation/navigation_close.svg') 25 25, auto;
+}
+
+.item {
+  display: block;
+  font-family: "Object Sans", serif;
+  width: fit-content;
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-text-stroke: 2px $dark;
+  -webkit-text-fill-color: transparent;
+
+  @include media-laptop {
+    font-size: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @include media-tablet {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-text-stroke: 1px $dark;
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $dark;
+  }
+}

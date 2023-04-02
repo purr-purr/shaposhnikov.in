@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  color: $dark;
+  cursor: none;
+  isolation: isolate;
+
+  @include media-tablet {
+    cursor: auto;
+  }
+}
+
+.inner {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @include media-laptop {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @include media-tablet {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

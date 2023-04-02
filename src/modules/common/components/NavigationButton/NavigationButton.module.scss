@@ -1,0 +1,37 @@
+.container {
+  display: block;
+  width: 190px;
+  height: 100%;
+  margin-left: auto;
+  font-size: 20px;
+  position: relative;
+  color: $dark;
+
+  @include media-laptop {
+    font-size: 15px;
+    width: 116px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100vh;
+    background-color: $dark;
+    transition: all 0.5s ease-in-out;
+
+    @include media-tablet {
+      display: none;
+    }
+  }
+
+  &--short:before {
+    height: 120px;
+
+    @include media-laptop {
+      height: 80px;
+    }
+  }
+}

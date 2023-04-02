@@ -1,0 +1,24 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: calc(100% - 5px);
+  height: 120px;
+  border-bottom: 1px solid $grey;
+  mix-blend-mode: difference;
+  background-color: $white;
+
+  @include media-laptop {
+    height: 80px;
+  }
+
+  @include media-tablet {
+    height: 40px;
+    width: calc(100% + 5px);
+  }
+}
+
+.offMixBlendMode {
+  mix-blend-mode: normal;
+}

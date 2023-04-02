@@ -1,0 +1,126 @@
+.container {
+  @include flex-align(center);
+  position: relative;
+  counter-increment: count;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 153px;
+
+  @include media-laptop {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+  }
+
+  @include media-tablet {
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  &:before {
+    content: "0" counter(count);
+    font-family: "Object Sans", serif;
+    position: absolute;
+    top: calc((100% - 44px) / 2);
+    left: 0;
+    font-weight: 800;
+    font-size: 40px;
+
+    @include media-laptop {
+      font-size: 25px;
+      top: calc((100% - 27px) / 2);
+    }
+
+    @include media-tablet {
+      font-size: 20px;
+      top: 10px;
+    }
+  }
+
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+
+  &.disabled {
+    opacity: 0.3;
+    transition: opacity .3s ease-in-out;
+
+    @include media-tablet {
+      opacity: 0.8;
+    }
+  }
+}
+
+.title {
+  font-family: "Object Sans", serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-right: auto;
+  pointer-events: none;
+
+  @include media-laptop {
+    font-size: 25px;
+  }
+
+  @include media-tablet {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+}
+
+.live {
+  display: flex;
+  margin-right: 66px;
+  margin-left: 66px;
+
+  @include media-tablet {
+    margin-left: auto;
+    color: $light-gray;
+  }
+
+  &:hover svg {
+    transform: translate3d(3px, -3px, 0) rotate(235deg);
+    transition: transform .3s ease-in-out;
+  }
+}
+
+.live-icon {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-left: 4px;
+
+  @include media-tablet {
+    width: 16px;
+    height: 16px;
+  }
+
+  svg {
+    transform: rotate(235deg);
+    fill: $red;
+    transition: transform .3s ease-in-out;
+  }
+}
+
+.live, .use {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+
+  &.disabled {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+}
+
+.year {
+  @include media-tablet {
+    color: $light-gray;
+  }
+}
+
+.year, .use, .live-icon {
+  pointer-events: none;
+}

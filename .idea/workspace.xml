@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/CV_UI_Developer_Shaposhnikov_Anton.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/common/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/donation/card_cash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/general/bg-blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/general/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/payment-info/successful.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/payment-info/unsuccessful.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/photothumb.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/any/modal-yellow-blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/any/payPal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/any/preloader.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/arrow-filled.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/chip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/download-filled.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/european-union.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/geo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/google-pay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/mail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/images/system/icon/usa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/css/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/css/main.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/scss/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/scss/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/scss/resources.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/assets/styles/scss/vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/donation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/donation_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/index_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/footer/Footer.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/footer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/footer/index_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/header/Header.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/header/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/header/index_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/preloader/Preloader.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/modules/preloader/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/successful-payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/successful-payment_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/unsuccessful-payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/projects/whih_fund/unsuccessful-payment_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/resume_Shaposhnikov_Anton--2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/assets-file/resume_Shaposhnikov_Anton--2022-start.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Heavy.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Heavy.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Heavy.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Heavy.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-HeavySlanted.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-HeavySlanted.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-HeavySlanted.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-HeavySlanted.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Slanted.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Slanted.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Slanted.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/fonts/ObjectSans-Slanted.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/black-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/projects/projects__alinahuz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/projects/projects__bfuwwt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/projects/projects__cheatsheets.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/projects/projects__delivery-group.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/projects/projects__deltruck.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/projects/projects__excelsa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/bg__cleen-noise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/black-star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/close__icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/android-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/android-icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/android-icon-36x36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/android-icon-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/android-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/android-icon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-57x57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/favicon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/ms-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/ms-icon-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/ms-icon-310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/favicon/ms-icon-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/projects__aqua-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/projects__red-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/projects__white-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/scroll-down-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/img/system/web-dev.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/js/webpack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldProject/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_alinahuz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_alinahuz.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_bfuwwt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_bfuwwt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_cheatsheets.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_cheatsheets.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_dehive.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_dehive.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_delivery.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_delivery.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_deltruck.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_deltruck.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_excelsa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_excelsa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_fantasy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_fantasy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_hamaiun.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/assets/projectList/projectList_hamaiun.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectId" id="2LvgUxinyVQ6tbIilqebg4I4gcA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DEVELOPMENT/GitHub/PERSONAL/shaposhnikov.in/src/modules/home/assets/projectList&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.codegpt&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\typescript\\lib&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\assets\projectList" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\assets\introduce" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets\favicon" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\public\assets" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src" />
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\icons\components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="" />
+      <created>1676756993191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676756993191</updated>
+      <workItem from="1676756996561" duration="9769000" />
+      <workItem from="1676807565456" duration="18409000" />
+      <workItem from="1676926075251" duration="592000" />
+      <workItem from="1676992034950" duration="4000" />
+      <workItem from="1679579700712" duration="16277000" />
+      <workItem from="1679761732095" duration="13179000" />
+      <workItem from="1679844485586" duration="17573000" />
+      <workItem from="1679916577825" duration="874000" />
+      <workItem from="1679936807103" duration="8269000" />
+      <workItem from="1679992469258" duration="8003000" />
+      <workItem from="1680012854711" duration="5014000" />
+      <workItem from="1680081483374" duration="5363000" />
+      <workItem from="1680095283873" duration="4096000" />
+      <workItem from="1680109506460" duration="8917000" />
+      <workItem from="1680170520324" duration="25416000" />
+      <workItem from="1680213438380" duration="592000" />
+      <workItem from="1680280868562" duration="9985000" />
+      <workItem from="1680344010284" duration="2718000" />
+      <workItem from="1680349332491" duration="6208000" />
+      <workItem from="1680356002068" duration="19019000" />
+      <workItem from="1680377597324" duration="593000" />
+      <workItem from="1680452033296" duration="10199000" />
+      <workItem from="1680464759901" duration="845000" />
+      <workItem from="1680465755296" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

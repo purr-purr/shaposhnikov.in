@@ -1,28 +1,46 @@
-# 🚀 Link on site https://shaposhnikov.in/ 🚀
+# Shaposhnikov Anton | Front-End Developer Portfolio
 
-## ⚙️ Features
+## 🚀 Link on site https://shaposhnikov.in/ 🚀
 
-- Webpack 5
-- SCSS
-- JavaScript
-- JQuery
-- Autoprefixer
-- Image Minify
-- Dev Server
+## Getting Started
 
+```bash
+yarn install
 
-## 🏁 Quick start project
+yarn dev
 
-# Install dependencies:
+yarn build
 
-npm install
+yarn deploy
+```
 
-# Server with live reload at http://localhost:8080/
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+result.
 
-npm run dev
+## Stack
 
-## 🏁 Production build
+- React.js
+- Next.js
+- TypeScript
 
-# Output will be at dist/ folder
+Also use:
 
-npm run build
+- Scss
+- dotenv
+- gtag
+- ftp-deploy
+
+## Authors
+
+Front-End Developer -
+`Anton Shaposhnikov`
+
+- [LinkedIn](https://www.linkedin.com/in/shaposhnikov-dev/)
+- [Email](mailto:666hesoyam@gmail.com)
+
+UI/UX Design -
+`Alina Huz`
+
+- [LinkedIn](https://www.linkedin.com/in/alina-huz-design/)
+- [Email](mailto:alina.huz.design@gmail.com)
+

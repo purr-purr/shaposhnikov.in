@@ -1,0 +1,49 @@
+.container {
+  padding-bottom: 94px;
+
+  @include media-laptop {
+    padding-bottom: 35px;
+  }
+
+  @include media-tablet {
+    padding-bottom: 110px;
+  }
+}
+
+.signature {
+  width: fit-content;
+  margin-bottom: -20px;
+
+  @include media-laptop {
+    margin-bottom: -16px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.socials {
+  @include flex-align(center);
+  gap: 60px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-laptop {
+    gap: 20px;
+  }
+
+  @include media-tablet {
+    margin-left: 0;
+  }
+
+  &-list {
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @include media-laptop {
+      font-size: 15px;
+    }
+  }
+}
