@@ -17,7 +17,7 @@ const messages = {
 	USERNAME: '${userName}',
 	IM_A_FRONT_END_DEVELOPER: "I'm a front-end developer",
 	I_HAVE_MORE_THAN_THREE_YEARS:
-		'I have more than 3 years of commercial' + ' experience.',
+		'With more than 3 years of commercial' + ' experience.',
 	AND_I_BUILD_THINGS_FOR_WEB: 'And I build things for web.',
 	LETS_CREATE_SOMETHING_AWESOME_TOGETHER:
 		"Let's create something awesome together!",
