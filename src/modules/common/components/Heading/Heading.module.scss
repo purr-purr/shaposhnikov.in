@@ -5,6 +5,7 @@
   font-size: 80px;
   min-width: 545px;
   padding-bottom: 83px;
+  margin-right: 63px;
   width: max-content;
   color: $dark;
 
@@ -14,6 +15,8 @@
     font-size: 60px;
     min-width: 408px;
     padding-bottom: 75px;
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 
   @include media-tablet {

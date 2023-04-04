@@ -1,12 +1,10 @@
 .container {
   @include flex-align(flex-start);
-  gap: 63px;
   margin-bottom: 400px;
 
   @include media-laptop {
     flex-direction: column;
     margin-bottom: 100px;
-    gap: 40px;
   }
 }
 

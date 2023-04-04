@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/messages.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Heading/Heading.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Contacts/Contacts.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Experience/Experience.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Projects/Projects.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Skills/Skills.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Footer/Footer.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +37,18 @@
     <option name="showMembers" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\prettier",
-    "ts.external.directory.path": "D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\DEVELOPMENT\\GitHub\\PERSONAL\\shaposhnikov.in\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,7 +57,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680531231269</updated>
-      <workItem from="1680531235937" duration="806000" />
+      <workItem from="1680531235937" duration="1399000" />
+      <workItem from="1680615231236" duration="1289000" />
     </task>
     <servers />
   </component>

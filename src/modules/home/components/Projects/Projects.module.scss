@@ -8,17 +8,11 @@
 
 .inner {
   @include flex-align(flex-end);
-  gap: 63px;
   margin-bottom: 100px;
 
   @include media-laptop {
-    gap: 40px;
     flex-direction: column;
     align-items: baseline;
     margin-bottom: 40px;
-  }
-
-  @include media-tablet {
-
   }
 }
