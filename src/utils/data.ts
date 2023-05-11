@@ -17,7 +17,7 @@ export const SKILLS_LIST = [
 			'Redux / Thunk / Toolkit',
 			'Next.js',
 			'HTML5',
-			'CSS3 (SCSS / PostCSS)',
+			'CSS3 (SASS / SCSS)',
 		],
 	},
 	{
@@ -27,18 +27,15 @@ export const SKILLS_LIST = [
 			'Styled Components',
 			'Chakra UI',
 			'JQuery',
+			'i18next',
 			'Gulp / WebPack',
 			'Git / GitHub',
-			'Npm / Yarn',
+			'Npm / Yarn / Nvm',
 		],
 	},
 	{
 		title: 'Other',
-		list: ['Agile', 'RESTful API', 'Mobile First CSS'],
-	},
-	{
-		title: 'Languages',
-		list: ['English (Intermediate)', 'Ukrainian (Fluent)'],
+		list: ['Agile', 'APIs', 'Mobile First approach', 'CSS in JS approach'],
 	},
 ];
 
@@ -106,6 +103,13 @@ export const PROJECTS_LIST = [
 		year: 2020,
 		poster: 'deltruck',
 	},
+	{
+		title: 'whih.com.ua',
+		link: 'https://whih.com.ua/index_en.html',
+		use: 'Vanilla JS',
+		year: 2022,
+		poster: 'whih',
+	},
 ];
 
 export const EXPERIENCE_LIST = [
@@ -115,12 +119,11 @@ export const EXPERIENCE_LIST = [
 			' over a period of 3-years while working with Ukrainian companies and' +
 			' participating in international projects.\n',
 		description:
-			'I possess significant experience in working in various domains, such as Blockchain, E-commerce, and Gambling, and have successfully worked in large teams while closely collaborating with my colleagues.',
+			'I possess significant experience in working in various domains, such as Blockchain, Logistics, and Gambling, and have successfully worked in large teams while closely collaborating with my colleagues.',
 		achievement: [
-			'Proficient in web markup, responsive UI, and Mobile First CSS',
-			'3+ years of front-end development experience, including JavaScript, HTML5, CSS3 (SCSS/PostCSS), JQuery, Gulp, WebPack, and GitHub',
-			'1.5+ years of experience in TypeScript, ReactJS, Redux, Next.js, Styled Components, and Chakra UI',
-			'6 months of experience with React Native',
+			'Proficient in semantic markup, responsive UI, and Mobile First approach',
+			'3+ years of front-end development experience, including work with Web accessibility, Animations and visual effects, Performance optimization, CSS in JS approach, Static typing using TypeScript',
+			'Mobile development with React Native',
 		],
 	},
 ];

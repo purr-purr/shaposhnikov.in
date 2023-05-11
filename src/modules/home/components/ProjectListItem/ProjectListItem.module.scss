@@ -38,6 +38,10 @@
     }
   }
 
+  &:nth-child(n+11):before {
+    content: counter(count);
+  }
+
   opacity: 1;
   transition: opacity .3s ease-in-out;
 
