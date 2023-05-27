@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4fc892a-e1cf-43c7-bfd3-8c511ff463ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/CursorPoster/CursorPoster.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/CursorPoster/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/hooks/useDetectSlowBrowsers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/Cursor.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/Introduce/Introduce.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/home/components/ProjectListItem/ProjectListItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Cursor/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/layout/components/Layout/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/messages.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/DEVELOPMENT/GitHub/PERSONAL/shaposhnikov.in/src/modules/common/components/CursorPoster",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs.jest.jest_package": "",
@@ -68,6 +75,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\common\components\CursorPoster" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\DEVELOPMENT\GitHub\PERSONAL\shaposhnikov.in\src\modules\home\assets\projectList" />
     </key>
@@ -79,7 +89,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Shell Script.yarn deploy">
+  <component name="RunManager" selected="Shell Script.yarn dev">
     <configuration default="true" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="">
       <method v="2" />
     </configuration>
@@ -137,6 +147,7 @@
       <workItem from="1683806618577" duration="395000" />
       <workItem from="1683807042845" duration="4001000" />
       <workItem from="1683811109424" duration="4547000" />
+      <workItem from="1685215560325" duration="7891000" />
     </task>
     <servers />
   </component>

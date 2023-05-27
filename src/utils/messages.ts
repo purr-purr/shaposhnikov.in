@@ -26,6 +26,7 @@ const messages = {
 		' following',
 	LINK: 'link',
 	TO_VIEW_MY_CV: 'to view my CV.',
+	LOADING: 'Loading...',
 };
 
 export default messages;

@@ -12,30 +12,38 @@ export const SKILLS_LIST = [
 		list: [
 			'JavaScript',
 			'TypeScript',
-			'React.js',
+			'React',
 			'React Native',
-			'Redux / Thunk / Toolkit',
+			'Node.js',
 			'Next.js',
-			'HTML5',
+			'Semantic HTML5',
 			'CSS3 (SASS / SCSS)',
 		],
 	},
 	{
 		title: 'Tools',
 		list: [
+			'React Redux',
+			'Jest',
+			'JQuery',
+			'Chakra UI',
+			'i18next',
 			'Ant-design / MUI',
 			'Styled Components',
-			'Chakra UI',
-			'JQuery',
-			'i18next',
-			'Gulp / WebPack',
+			'WebPack / Gulp',
 			'Git / GitHub',
 			'Npm / Yarn / Nvm',
 		],
 	},
 	{
 		title: 'Other',
-		list: ['Agile', 'APIs', 'Mobile First approach', 'CSS in JS approach'],
+		list: [
+			'Agile',
+			'APIs',
+			'CSS Modules',
+			'Mobile First approach',
+			'CSS in JS approach',
+		],
 	},
 ];
 
@@ -121,9 +129,12 @@ export const EXPERIENCE_LIST = [
 		description:
 			'I possess significant experience in working in various domains, such as Blockchain, Logistics, and Gambling, and have successfully worked in large teams while closely collaborating with my colleagues.',
 		achievement: [
-			'Proficient in semantic markup, responsive UI, and Mobile First approach',
-			'3+ years of front-end development experience, including work with Web accessibility, Animations and visual effects, Performance optimization, CSS in JS approach, Static typing using TypeScript',
-			'Mobile development with React Native',
+			'Proficient in semantic markup, responsive UI, and Mobile First' +
+				' approach.',
+			'3+ years of front-end development experience, including work with web' +
+				' accessibility, animations and visual effects, performance' +
+				' optimization, CSS in JS approach, static typing using TypeScript.',
+			'Mobile development with React Native.',
 		],
 	},
 ];

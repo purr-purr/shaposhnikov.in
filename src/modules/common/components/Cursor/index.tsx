@@ -1,16 +1,16 @@
 import { CSSProperties, FC, useContext, useEffect, useState } from 'react';
-import Image from 'next/image';
 
+import CursorPoster from '@modules/common/components/CursorPoster';
 import AppContext from '@modules/layout/context';
 import cn from 'classnames';
 
 import { useMediaQuery } from '@modules/common/hooks';
 
 import { MOBILE_BREAKPOINT } from '@utils/const';
-import messages from '@utils/messages';
 
 import { ICursorPosition } from '@modules/common/types';
 
+import useDetectSlowBrowsers from '../../hooks/useDetectSlowBrowsers';
 import s from './Cursor.module.scss';
 
 const Cursor: FC = () => {
@@ -53,28 +53,21 @@ const Cursor: FC = () => {
 		currentHoveredEl !== cursorState && handleCursorState(currentHoveredEl);
 	}, [currentHoveredEl]);
 
-	const getPosterPath = (path: string) => {
-		return (
-			path &&
-			require(`src/modules/home/assets/projectList/projectList_${path}.jpg`)
-		);
-	};
-
 	const cursorStyle: CSSProperties = {
-		transform: `translate3d(${cursorPosition.x}px, ${cursorPosition.y}px), 0`,
-		WebkitTransform: `translate3d(${cursorPosition.x}px, ${cursorPosition.y}px, 0)`,
+		transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
+		WebkitTransform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
 	};
 
-	return isNavigationMode || isMobile ? null : (
+	const isSlowBrowser = useDetectSlowBrowsers();
+
+	return isSlowBrowser || isNavigationMode || isMobile ? null : (
 		<>
 			<div
 				style={cursorStyle}
 				className={cn(s.cursor, currentHoveredEl === 'circle' && s.circle)}
 			/>
 
-			{currentHoveredEl === 'default' ||
-			currentHoveredEl === 'button' ||
-			currentHoveredEl === 'circle' ? (
+			{['default', 'button', 'circle'].includes(currentHoveredEl) ? (
 				<>
 					{currentHoveredEl !== 'circle' && (
 						<div
@@ -84,12 +77,7 @@ const Cursor: FC = () => {
 					)}
 				</>
 			) : (
-				<Image
-					src={getPosterPath(currentHoveredEl)}
-					style={cursorStyle}
-					alt={messages.POSTER}
-					className={s.poster}
-				/>
+				<CursorPoster currentPoster={currentHoveredEl} style={cursorStyle} />
 			)}
 		</>
 	);

@@ -1,19 +1,10 @@
-.cursor, .aura, .poster {
+.cursor, .aura {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 98;
   pointer-events: none;
-}
-
-.poster {
-  width: 450px;
-  height: 230px;
-  margin-left: 10px;
-  margin-top: 10px;
-  border: 0.5px solid $light-gray;
-  transition: transform 0.3s linear;
 }
 
 .cursor {
