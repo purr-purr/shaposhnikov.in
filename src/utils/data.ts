@@ -28,7 +28,7 @@ export const SKILLS_LIST = [
 			'JQuery',
 			'Chakra UI',
 			'i18next',
-			'Ant-design / MUI',
+			'Ant-design',
 			'Styled Components',
 			'WebPack / Gulp',
 			'Git / GitHub',
@@ -37,13 +37,7 @@ export const SKILLS_LIST = [
 	},
 	{
 		title: 'Other',
-		list: [
-			'Agile',
-			'APIs',
-			'CSS Modules',
-			'Mobile First approach',
-			'CSS in JS approach',
-		],
+		list: ['Agile', 'APIs', 'CSS in JS approach', 'Mobile First approach'],
 	},
 ];
 
