@@ -22,7 +22,7 @@ const ProjectList = () => {
 	return (
 		<ul className={s.container} onMouseLeave={() => setLinePosition(0)}>
 			<li className={s.line} style={{ top: `${linePosition}px` }} />
-			{PROJECTS_LIST.map((item) => (
+			{PROJECTS_LIST.map((item) => item.isVisible && (
 				<ProjectListItem
 					key={item.title}
 					title={item.title}

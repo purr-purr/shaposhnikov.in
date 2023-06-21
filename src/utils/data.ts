@@ -43,6 +43,7 @@ export const SKILLS_LIST = [
 
 export const PROJECTS_LIST = [
 	{
+		isVisible: true,
 		title: 'app.dehive.finance',
 		link: 'https://app.dehive.finance/',
 		use: 'React.JS',
@@ -50,6 +51,7 @@ export const PROJECTS_LIST = [
 		poster: 'dehive',
 	},
 	{
+		isVisible: true,
 		title: 'cheatsheets-js.com',
 		link: 'https://cheatsheets-js.com/',
 		use: 'Next.JS',
@@ -57,6 +59,7 @@ export const PROJECTS_LIST = [
 		poster: 'cheatsheets',
 	},
 	{
+		isVisible: true,
 		title: 'app.leaguedao.com',
 		link: 'https://app.leaguedao.com/megaleague/overview',
 		use: 'Next.JS',
@@ -64,6 +67,7 @@ export const PROJECTS_LIST = [
 		poster: 'fantasy',
 	},
 	{
+		isVisible: true,
 		title: 'alinahuz.com',
 		link: 'https://alinahuz.com/',
 		use: 'React.JS',
@@ -71,6 +75,7 @@ export const PROJECTS_LIST = [
 		poster: 'alinahuz',
 	},
 	{
+		isVisible: false,
 		title: 'hamaiun.com.ua',
 		link: 'https://hamaiun.com.ua/',
 		use: 'Vanilla JS',
@@ -78,6 +83,7 @@ export const PROJECTS_LIST = [
 		poster: 'hamaiun',
 	},
 	{
+		isVisible: true,
 		title: 'bfuwwt.com.ua',
 		link: 'https://bfuwwt.com.ua/',
 		use: 'React.JS',
@@ -85,6 +91,7 @@ export const PROJECTS_LIST = [
 		poster: 'bfuwwt',
 	},
 	{
+		isVisible: true,
 		title: 'excelsaconsult.com',
 		link: 'https://excelsaconsult.com/',
 		use: 'React.JS',
@@ -92,6 +99,7 @@ export const PROJECTS_LIST = [
 		poster: 'excelsa',
 	},
 	{
+		isVisible: true,
 		title: 'delivery-auto.com',
 		link: 'https://delivery-auto.com/en-us',
 		use: 'Vanilla JS',
@@ -99,6 +107,7 @@ export const PROJECTS_LIST = [
 		poster: 'delivery',
 	},
 	{
+		isVisible: true,
 		title: 'deltruck.com',
 		link: 'https://deltruck.com/en-us',
 		use: 'Vanilla JS',
@@ -106,6 +115,7 @@ export const PROJECTS_LIST = [
 		poster: 'deltruck',
 	},
 	{
+		isVisible: true,
 		title: 'whih.com.ua',
 		link: 'https://whih.com.ua/index_en.html',
 		use: 'Vanilla JS',
