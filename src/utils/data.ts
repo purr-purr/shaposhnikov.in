@@ -75,7 +75,7 @@ export const PROJECTS_LIST = [
 		poster: 'alinahuz',
 	},
 	{
-		isVisible: false,
+		isVisible: true,
 		title: 'hamaiun.com.ua',
 		link: 'https://hamaiun.com.ua/',
 		use: 'Vanilla JS',
