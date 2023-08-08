@@ -1,7 +1,7 @@
 export const NAVIGATION_LIST = ['Skills', 'Experience', 'Projects', 'Contacts'];
 
 export const SOCIALS_LIST = [
-	{ title: 'LinkedIn', link: 'https://www.linkedin.com/in/shaposhnikov-dev/' },
+	{ title: 'linkedIn', link: 'https://www.linkedin.com/in/shaposhnikov-dev/' },
 	{ title: 'github', link: 'https://github.com/purr-purr' },
 	{ title: 'telegram', link: 'https://t.me/purrpurr' },
 ];
@@ -25,6 +25,7 @@ export const SKILLS_LIST = [
 		list: [
 			'React Redux',
 			'Jest',
+			'MySQL',
 			'JQuery',
 			'Chakra UI',
 			'i18next',
@@ -84,6 +85,22 @@ export const PROJECTS_LIST = [
 	},
 	{
 		isVisible: true,
+		title: 'tenlait.lviv.ua',
+		link: 'https://tenlait.lviv.ua/',
+		use: 'Next.JS',
+		year: 2023,
+		poster: 'tenlait',
+	},
+	{
+		isVisible: true,
+		title: 'setmis.lviv.ua',
+		link: 'https://setmis.lviv.ua/',
+		use: 'Next.JS',
+		year: 2023,
+		poster: 'setmis',
+	},
+	{
+		isVisible: true,
 		title: 'bfuwwt.com.ua',
 		link: 'https://bfuwwt.com.ua/',
 		use: 'React.JS',
@@ -121,6 +138,14 @@ export const PROJECTS_LIST = [
 		use: 'Vanilla JS',
 		year: 2022,
 		poster: 'whih',
+	},
+	{
+		isVisible: true,
+		title: 'bekketinu.pro',
+		link: 'https://bekketinu.pro/',
+		use: 'Vanilla JS',
+		year: 2022,
+		poster: 'bekketinu',
 	},
 ];
 
