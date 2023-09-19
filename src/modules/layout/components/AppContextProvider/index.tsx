@@ -2,7 +2,7 @@ import { FC, useCallback, useState } from 'react';
 
 import AppContext from '@modules/layout/context';
 
-import { ILayoutProps } from '@modules/layout/types';
+import type { ILayoutProps } from '@modules/layout/types';
 
 const AppContextProvider: FC<ILayoutProps> = ({ children }) => {
 	const [isNavigationMode, setIsNavigationMode] = useState(false);

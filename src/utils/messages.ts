@@ -22,7 +22,7 @@ const messages = {
 	LETS_CREATE_SOMETHING_AWESOME_TOGETHER:
 		"Let's create something awesome together!",
 	IF_YOU_LIKE_TO_LEARN_MORE_ABOUT_MY_WORK_EXPERIENCE:
-		"If you'd like to learn more about my work experience, please visit the" +
+		"If you'd like to know more about my work experience, please visit the" +
 		' following',
 	LINK: 'link',
 	TO_VIEW_MY_CV: 'to view my CV.',

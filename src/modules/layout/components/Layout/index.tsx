@@ -9,7 +9,7 @@ import { useDetectSlowBrowsers, useMediaQuery } from '@modules/common/hooks';
 
 import { MOBILE_BREAKPOINT } from '@utils/const';
 
-import { ILayoutProps } from '@modules/layout/types';
+import type { ILayoutProps } from '@modules/layout/types';
 
 import s from './Layout.module.scss';
 

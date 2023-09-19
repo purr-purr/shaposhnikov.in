@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC, type MouseEvent} from 'react';
 import Link from 'next/link';
 
 import ArrowDefault from '@modules/icons/components/ArrowDefault';
@@ -16,7 +16,7 @@ const ProjectListItem: FC<{
 	year: number;
 	use: string;
 	link: string;
-	onMouseEvent: (event: any) => void;
+	onMouseEvent: (event: MouseEvent<HTMLLIElement>) => void;
 	isDisabledState: boolean;
 	poster: string;
 }> = ({

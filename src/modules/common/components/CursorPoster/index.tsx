@@ -1,4 +1,4 @@
-import { CSSProperties, FC, useState } from 'react';
+import { type CSSProperties, FC, useState } from 'react';
 import Image from 'next/image';
 
 import cn from 'classnames';

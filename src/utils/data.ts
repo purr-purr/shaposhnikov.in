@@ -26,6 +26,7 @@ export const SKILLS_LIST = [
 			'React Redux',
 			'Jest',
 			'MySQL',
+			'Nginx',
 			'JQuery',
 			'Chakra UI',
 			'i18next',
@@ -38,11 +39,19 @@ export const SKILLS_LIST = [
 	},
 	{
 		title: 'Other',
-		list: ['Agile', 'APIs', 'CSS in JS approach', 'Mobile First approach'],
+		list: ['Agile', 'RESTful API', 'CSS in JS approach', 'Mobile First approach'],
 	},
 ];
 
 export const PROJECTS_LIST = [
+	{
+		isVisible: true,
+		title: 'akula.in.ua',
+		link: 'https://akula.in.ua/',
+		use: 'Next.JS',
+		year: 2023,
+		poster: 'akula',
+	},
 	{
 		isVisible: true,
 		title: 'app.dehive.finance',

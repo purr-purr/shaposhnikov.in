@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, type MouseEvent } from 'react';
 
 import ProjectListItem from '@modules/home/components/ProjectListItem';
 import AppContext from '@modules/layout/context';
@@ -11,10 +11,9 @@ const ProjectList = () => {
 	const { cursorState } = useContext(AppContext);
 	const [linePosition, setLinePosition] = useState(0);
 
-	const handleOnMouseOver = (event: any) => {
+	const handleOnMouseOver = (event: MouseEvent<HTMLLIElement>) => {
 		event.preventDefault();
-
-		if (event.target === event.currentTarget) {
+		if (event.target instanceof HTMLLIElement && event.target === event.currentTarget) {
 			setLinePosition(event.target.offsetTop);
 		}
 	};

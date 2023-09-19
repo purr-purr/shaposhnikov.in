@@ -20,8 +20,8 @@ const ScrollProgress: FC = () => {
 	};
 
 	useEffect(() => {
-		const handleScroll = (event: any) => {
-			const { scrollHeight, scrollTop, clientHeight } = event.target;
+		const handleScroll = (event: Event) => {
+			const { scrollHeight, scrollTop, clientHeight } = event.target as HTMLElement;
 			handleScrollPosition(scrollTop);
 
 			const scrollBeginning = Math.max(scrollTop, 0);
@@ -35,6 +35,7 @@ const ScrollProgress: FC = () => {
 		return () => {
 			mainBlock?.removeEventListener('scroll', handleScroll);
 		};
+		// eslint-disable-next-line
 	}, []);
 
 	return (

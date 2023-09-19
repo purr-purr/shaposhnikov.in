@@ -1,4 +1,4 @@
-import { CSSProperties, FC, useContext, useEffect, useState } from 'react';
+import { type CSSProperties, FC, useContext, useEffect, useState } from 'react';
 
 import CursorPoster from '@modules/common/components/CursorPoster';
 import AppContext from '@modules/layout/context';
@@ -8,7 +8,7 @@ import { useMediaQuery } from '@modules/common/hooks';
 
 import { MOBILE_BREAKPOINT } from '@utils/const';
 
-import { ICursorPosition } from '@modules/common/types';
+import type { ICursorPosition } from '@modules/common/types';
 
 import useDetectSlowBrowsers from '../../hooks/useDetectSlowBrowsers';
 import s from './Cursor.module.scss';
