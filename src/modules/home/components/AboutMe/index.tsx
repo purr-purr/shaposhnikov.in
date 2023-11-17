@@ -31,19 +31,19 @@ const AboutMe = () => {
 						{messages.USERNAME}{' '}
 					</span>
 					!{' '}
-					<span className={cn(s.line, getActiveStateClassName(1500))}>
-						{messages.IM_A_FRONT_END_DEVELOPER}
-					</span>
+				</p>
+				<p className={cn(s.line, getActiveStateClassName(1500))}>
+					{messages.IM_A_FRONT_END_DEVELOPER}
 				</p>
 
 				<p className={cn(s.line, getActiveStateClassName(1800))}>
-					{messages.I_HAVE_MORE_THAN_THREE_YEARS}
+					{messages.WITH_A_SOLID_THREE_YEARS_IN_THE_INDUSTRY}
 				</p>
 				<p className={cn(s.line, getActiveStateClassName(2100))}>
-					{messages.AND_I_BUILD_THINGS_FOR_WEB}
+					{messages.MY_PASSION}
 				</p>
 				<p className={cn(s.line, getActiveStateClassName(2350))}>
-					{messages.LETS_CREATE_SOMETHING_AWESOME_TOGETHER}
+					{messages.LETS_TEAM_UP}
 				</p>
 			</div>
 		</article>
