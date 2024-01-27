@@ -13,10 +13,10 @@
   flex-wrap: wrap;
   gap: 40px;
   margin-top: 170px;
+  width: 100%;
 
   @include media-laptop {
     margin-top: 0;
-    width: 100%;
   }
 
   @include media-tablet {
