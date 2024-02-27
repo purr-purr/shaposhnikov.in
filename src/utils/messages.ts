@@ -15,9 +15,9 @@ const messages = {
 	HELLO: 'Hello',
 	POSTER: 'Project Poster',
 	USERNAME: '${userName}',
-	IM_A_FRONT_END_DEVELOPER: "I’m a passionate frontend developer",
+	IM_A_FRONT_END_DEVELOPER: "I’m a passionate frontend engineer",
 	WITH_A_SOLID_THREE_YEARS_IN_THE_INDUSTRY:
-		'with a solid three years in the industry.',
+		'with a solid four years in the industry.',
 	MY_PASSION: 'My passion? Crafting sleek, cutting-edge web interfaces.',
 	LETS_TEAM_UP:
 		"Let’s team up and turn our digital dreams into reality.",

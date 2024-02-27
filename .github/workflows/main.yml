@@ -21,21 +21,21 @@ jobs:
           name: out
           path: out    
   deploy:
-       name: Deploy
-       needs: build
-       runs-on: ubuntu-latest
-       steps:
-         - name: Checkout repository
-           uses: actions/checkout@main
-         - name: Download artifact
-           uses: actions/download-artifact@main
-           with:
-             name: out
-             path: out
-         - name: Sync files to hosting
-           uses: SamKirkland/FTP-Deploy-Action@4.0.0
-           with:
-             server: ${{ sectets.FTP_SERVER }}
-             username: ${{ sectets.FTP_USERNAME }}
-             password: ${{ sectets.FTP_PASSWORD }}
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+      - name: Download artifact
+        uses: actions/download-artifact@main
+        with:
+          name: out
+          path: out
+      - name: Sync files to hosting
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
 
