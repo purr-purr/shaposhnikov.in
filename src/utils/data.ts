@@ -25,21 +25,21 @@ export const SKILLS_LIST = [
 		list: [
 			'React Redux',
 			'Jest',
+			'Cypress',
 			'MySQL',
-			'Nginx',
 			'JQuery',
-			'Chakra UI',
 			'i18next',
-			'Ant-design',
+			'Git',
+			'GitHub / GitHub Actions',
 			'Styled Components',
 			'WebPack / Gulp',
-			'Git / GitHub',
-			'Npm / Yarn / Nvm',
 		],
 	},
 	{
 		title: 'Other',
-		list: ['Agile', 'RESTful API', 'CSS in JS approach', 'Mobile First approach'],
+		list:
+			['Microsoft Azure Cloud', 'Nginx Web server', 'RESTful APIs', 'Chakra UI', 'Ant-design / MUI', 'Agile' +
+			' methodology',],
 	},
 ];
 
@@ -156,20 +156,28 @@ export const PROJECTS_LIST = [
 		year: 2022,
 		poster: 'bekketinu',
 	},
+	{
+		isVisible: true,
+		title: 'alter-energo.in.ua',
+		link: 'https://alter-energo.in.ua/',
+		use: 'Next JS',
+		year: 2024,
+		poster: 'alterenergo',
+	},
 ];
 
 export const EXPERIENCE_LIST = [
 	{
 		intro:
 			'I have garnered substantial commercial experience in web development' +
-			' over a period of 3-years while working with Ukrainian companies and' +
+			' over a period of 4-years while working with Ukrainian companies and' +
 			' participating in international projects.\n',
 		description:
 			'I possess significant experience in working in various domains, such as Blockchain, Logistics, and Gambling, and have successfully worked in large teams while closely collaborating with my colleagues.',
 		achievement: [
 			'Proficient in semantic markup, responsive UI, and Mobile First' +
 				' approach.',
-			'3+ years of front-end development experience, including work with web' +
+			'4+ years of front-end development experience, including work with web' +
 				' accessibility, animations and visual effects, performance' +
 				' optimization, CSS in JS approach, static typing using TypeScript.',
 			'Mobile development with React Native.',
