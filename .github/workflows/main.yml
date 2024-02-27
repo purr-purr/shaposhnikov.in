@@ -12,9 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: Build Dependencies
-        run: npm run build
+        run: yarn build:deploy
       - name: Archive production artifact
         uses: actions/upload-artifact@main
         with:
