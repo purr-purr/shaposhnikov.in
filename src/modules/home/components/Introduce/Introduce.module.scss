@@ -25,12 +25,16 @@
     height: calc(100% - 40px);
   }
 
+  @include media-mobile {
+    top: 100px;
+  }
+
   &-item {
     position: absolute;
     top: 0;
     width: 100%;
     padding-top: 25px;
-    background: url("../../assets/introduce/web-dev.svg") no-repeat;
+    background: url("assets/web-dev.svg") no-repeat;
     height: 100%;
     background-size: contain;
     background-position-x: center;
@@ -80,7 +84,7 @@
   }
 
   @include media-mobile {
-    top: 140px;
+    top: 190px;
   }
 
   &.hidden {

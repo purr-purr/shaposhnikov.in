@@ -56,4 +56,9 @@
       top: 40px;
     }
   }
+
+  &--static {
+    position: relative;
+    top: 0;
+  }
 }

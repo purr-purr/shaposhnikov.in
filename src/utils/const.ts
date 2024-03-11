@@ -29,3 +29,4 @@ export const APP_META_KEY_WORDS =
 	'UI development, ';
 export const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
 export const MOBILE_BREAKPOINT = 1024;
+export const LAPTOP_BREAKPOINT = 1400;

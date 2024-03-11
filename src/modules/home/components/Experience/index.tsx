@@ -18,7 +18,7 @@ const Experience = () => {
 			<div className={s.info}>
 				{EXPERIENCE_LIST.map((item, index) => (
 					<Fragment key={index}>
-						<p>{item.intro}</p>
+						<p dangerouslySetInnerHTML={{ __html: item.intro }}/>
 						<ul className={s.list}>
 							{item.achievement.map((achievementItem) => (
 								<li
@@ -29,7 +29,6 @@ const Experience = () => {
 								</li>
 							))}
 						</ul>
-						<p>{item.description}</p>
 						<p>
 							{messages.IF_YOU_LIKE_TO_LEARN_MORE_ABOUT_MY_WORK_EXPERIENCE}{' '}
 							<TextLink

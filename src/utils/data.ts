@@ -17,7 +17,8 @@ export const SKILLS_LIST = [
 			'Node.js',
 			'Next.js',
 			'Semantic HTML5',
-			'CSS3 (SASS / SCSS)',
+			'CSS3',
+			'SASS / SCSS / PostCSS',
 		],
 	},
 	{
@@ -38,8 +39,7 @@ export const SKILLS_LIST = [
 	{
 		title: 'Other',
 		list:
-			['Microsoft Azure Cloud', 'Nginx Web server', 'RESTful APIs', 'Chakra UI', 'Ant-design / MUI', 'Agile' +
-			' methodology',],
+			['Microsoft Azure Cloud', 'Nginx Web server', 'RESTful APIs', 'Chakra UI', 'Ant-design / MUI',],
 	},
 ];
 
@@ -51,6 +51,22 @@ export const PROJECTS_LIST = [
 		use: 'Next.JS',
 		year: 2023,
 		poster: 'akula',
+	},
+	{
+		isVisible: true,
+		title: 'alter-energo.in.ua',
+		link: 'https://alter-energo.in.ua/',
+		use: 'Next JS',
+		year: 2024,
+		poster: 'alterenergo',
+	},
+	{
+		isVisible: false,
+		title: 'today-studio.ie',
+		link: 'https://today-studio.ie/',
+		use: 'Next JS',
+		year: 2024,
+		poster: 'today',
 	},
 	{
 		isVisible: true,
@@ -111,7 +127,7 @@ export const PROJECTS_LIST = [
 	{
 		isVisible: true,
 		title: 'bfuwwt.com.ua',
-		link: 'https://bfuwwt.com.ua/',
+		link: 'https://purr-purr.github.io/bfuwwt.com.ua/',
 		use: 'React.JS',
 		year: 2023,
 		poster: 'bfuwwt',
@@ -143,7 +159,7 @@ export const PROJECTS_LIST = [
 	{
 		isVisible: true,
 		title: 'whih.com.ua',
-		link: 'https://whih.com.ua/index_en.html',
+		link: 'https://purr-purr.github.io/whih.com.ua/',
 		use: 'Vanilla JS',
 		year: 2022,
 		poster: 'whih',
@@ -155,32 +171,29 @@ export const PROJECTS_LIST = [
 		use: 'Vanilla JS',
 		year: 2022,
 		poster: 'bekketinu',
-	},
-	{
-		isVisible: true,
-		title: 'alter-energo.in.ua',
-		link: 'https://alter-energo.in.ua/',
-		use: 'Next JS',
-		year: 2024,
-		poster: 'alterenergo',
-	},
+	}
 ];
 
 export const EXPERIENCE_LIST = [
 	{
 		intro:
-			'I have garnered substantial commercial experience in web development' +
-			' over a period of 4-years while working with Ukrainian companies and' +
-			' participating in international projects.\n',
-		description:
-			'I possess significant experience in working in various domains, such as Blockchain, Logistics, and Gambling, and have successfully worked in large teams while closely collaborating with my colleagues.',
+			'Over the course of <b>4 years</b>, I\'ve cultivated significant commercial' +
+			' experience in web development while collaborating with Ukrainian' +
+			' companies and engaging in international projects. My expertise' +
+			' extends across diverse sectors, including <b>SaaS, Blockchain,' +
+			' Gambling, Advertising</b>, and <b>Logistics</b>. Within team' +
+			' environments, I' +
+			' excel at seamlessly integrating and fostering strong relationships to achieve common goals.',
 		achievement: [
-			'Proficient in semantic markup, responsive UI, and Mobile First' +
-				' approach.',
-			'4+ years of front-end development experience, including work with web' +
-				' accessibility, animations and visual effects, performance' +
-				' optimization, CSS in JS approach, static typing using TypeScript.',
-			'Mobile development with React Native.',
+			'4+ years of web development experience, specializing in JavaScript,' +
+			' HTML5, and CSS. My expertise includes web accessibility, animations,' +
+			' visual effects, and performance optimization, ensuring engaging and efficient web experiences.',
+			'3+ years in creating Single Page Applications (SPAs) using React,' +
+			' Next.js, TypeScript and Redux for state management.',
+			'2+ years of experience in backend development, building and managing' +
+			' server-side infrastructure using Node.js, RESTful APIs, Azure,' +
+			' Nginx, Linux OS, and Windows.',
+			// '1+ years of not-commercial experience in Mobile development using React Native',
 		],
 	},
 ];

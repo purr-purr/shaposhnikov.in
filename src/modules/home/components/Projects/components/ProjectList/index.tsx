@@ -1,9 +1,10 @@
-import { useContext, useState, type MouseEvent } from 'react';
+import {type MouseEvent, useContext, useState} from 'react';
 
-import ProjectListItem from '@modules/home/components/ProjectListItem';
+import ProjectListItem
+	from '@modules/home/components/Projects/components/ProjectListItem';
 import AppContext from '@modules/layout/context';
 
-import { PROJECTS_LIST } from '@utils/data';
+import {PROJECTS_LIST} from '@utils/data';
 
 import s from './ProjectList.module.scss';
 

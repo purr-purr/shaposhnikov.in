@@ -1,4 +1,4 @@
-import { type CSSProperties, FC, useState } from 'react';
+import {type CSSProperties, FC, useState} from 'react';
 import Image from 'next/image';
 
 import cn from 'classnames';
@@ -16,7 +16,7 @@ const CursorPoster: FC<{ currentPoster: string; style: CSSProperties }> = ({
 	const getPosterPath = (path: string) => {
 		return (
 			path &&
-			require(`src/modules/home/assets/projectList/projectList_${path}.jpg`)
+			require(`src/modules/home/components/projects/assets/projectList_${path}.jpg`)
 		);
 	};
 

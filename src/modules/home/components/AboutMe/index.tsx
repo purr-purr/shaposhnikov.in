@@ -1,11 +1,11 @@
-import { useContext } from 'react';
+import {useContext} from 'react';
 
 import AppContext from '@modules/layout/context';
 import cn from 'classnames';
 
-import { useMediaQuery } from '@modules/common/hooks';
+import {useMediaQuery} from '@modules/common/hooks';
 
-import { MOBILE_BREAKPOINT } from '@utils/const';
+import {MOBILE_BREAKPOINT} from '@utils/const';
 import messages from '@utils/messages';
 
 import s from './AboutMe.module.scss';
@@ -35,9 +35,8 @@ const AboutMe = () => {
 				<p className={cn(s.line, getActiveStateClassName(1500))}>
 					{messages.IM_A_FRONT_END_DEVELOPER}
 				</p>
-
 				<p className={cn(s.line, getActiveStateClassName(1800))}>
-					{messages.WITH_A_SOLID_THREE_YEARS_IN_THE_INDUSTRY}
+					{messages.WITH_A_SOLID_FOUR_YEARS_IN_THE_INDUSTRY}
 				</p>
 				<p className={cn(s.line, getActiveStateClassName(2100))}>
 					{messages.MY_PASSION}
