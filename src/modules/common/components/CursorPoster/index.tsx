@@ -16,7 +16,7 @@ const CursorPoster: FC<{ currentPoster: string; style: CSSProperties }> = ({
 	const getPosterPath = (path: string) => {
 		return (
 			path &&
-			require(`src/modules/home/components/projects/assets/projectList_${path}.jpg`)
+			require(`src/modules/home/components/Projects/assets/projectList_${path}.jpg`)
 		);
 	};
 
