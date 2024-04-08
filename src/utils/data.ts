@@ -46,6 +46,14 @@ export const SKILLS_LIST = [
 export const PROJECTS_LIST = [
 	{
 		isVisible: true,
+		title: 'roct.com.ua',
+		link: 'https://roct.com.ua/',
+		use: 'Next.JS',
+		year: 2024,
+		poster: 'roct',
+	},
+	{
+		isVisible: true,
 		title: 'akula.in.ua',
 		link: 'https://akula.in.ua/',
 		use: 'Next.JS',
