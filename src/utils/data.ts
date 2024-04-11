@@ -54,6 +54,14 @@ export const PROJECTS_LIST = [
 	},
 	{
 		isVisible: true,
+		title: 'today-studio.ie',
+		link: 'https://today-studio.ie/',
+		use: 'Next.JS',
+		year: 2024,
+		poster: 'today',
+	},
+	{
+		isVisible: true,
 		title: 'akula.in.ua',
 		link: 'https://akula.in.ua/',
 		use: 'Next.JS',
